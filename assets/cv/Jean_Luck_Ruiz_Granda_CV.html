@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean Luck Ruiz Granda — CV Ejecutivo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:     #FAFAF8;
+    --white:  #FFFFFF;
+    --ink:    #111111;
+    --ink-2:  #444444;
+    --ink-3:  #888888;
+    --brass:  #A07840;
+    --rule:   #E2E0DC;
+    --tag-bg: #F2F0EB;
+    --page-w: 794px; /* A4 width */
+  }
+
+  html { font-size: 15px; }
+
+  body {
+    background: #E8E6E0;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
+
+  /* ── PAGE WRAPPER ── */
+  .page {
+    background: var(--white);
+    width: var(--page-w);
+    margin: 32px auto;
+    padding: 0;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+  }
+
+  /* ── HEADER ── */
+  .cv-header {
+    background: var(--ink);
+    color: #FAFAF8;
+    padding: 42px 52px 38px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cv-header::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 3px;
+    background: var(--brass);
+  }
+  .header-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    margin-bottom: 6px;
+  }
+  .header-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 20px;
+  }
+  .header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.78rem;
+    color: #AAAAAA;
+  }
+  .header-meta span { display: flex; align-items: center; gap: 5px; }
+  .header-meta a { color: #AAAAAA; }
+
+  /* ── BODY GRID ── */
+  .cv-body {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 0;
+  }
+  .col-main { padding: 36px 40px 40px 52px; border-right: 1px solid var(--rule); }
+  .col-side  { padding: 36px 28px 40px; background: var(--bg); }
+
+  /* ── SECTION TITLE ── */
+  .sec-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sec-block { margin-bottom: 30px; }
+
+  /* ── EXECUTIVE SUMMARY ── */
+  .summary-text {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: var(--ink-2);
+  }
+  .summary-text strong { color: var(--ink); font-weight: 600; }
+
+  /* ── METRICS STRIP ── */
+  .metrics-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .metric-cell {
+    background: var(--white);
+    padding: 16px 14px;
+    text-align: center;
+  }
+  .metric-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+  .metric-label {
+    font-size: 0.67rem;
+    color: var(--ink-3);
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+
+  /* ── EXPERIENCE ── */
+  .exp-item { margin-bottom: 22px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 3px; }
+  .exp-company {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .exp-period {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--brass);
+    white-space: nowrap;
+    margin-left: 8px;
+    padding-top: 2px;
+  }
+  .exp-role {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--ink-2);
+    margin-bottom: 7px;
+  }
+  .exp-bullets { padding-left: 0; list-style: none; }
+  .exp-bullets li {
+    font-size: 0.80rem;
+    color: var(--ink-2);
+    line-height: 1.6;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+  .exp-bullets li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--brass);
+    font-weight: 700;
+  }
+  .exp-bullets li strong { color: var(--ink); }
+  .exp-divider { border: none; border-top: 1px solid var(--rule); margin: 20px 0; }
+
+  /* ── KEY ACHIEVEMENTS ── */
+  .achieve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .achieve-item {
+    background: var(--tag-bg);
+    border-left: 3px solid var(--brass);
+    border-radius: 0 4px 4px 0;
+    padding: 10px 12px;
+  }
+  .achieve-metric {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .achieve-desc {
+    font-size: 0.72rem;
+    color: var(--ink-2);
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+
+  /* ── SIDEBAR SECTIONS ── */
+  .side-sec { margin-bottom: 24px; }
+  .side-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.60rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* Competencies */
+  .comp-list { list-style: none; }
+  .comp-list li {
+    font-size: 0.77rem;
+    color: var(--ink-2);
+    padding: 4px 0;
+    border-bottom: 1px solid var(--rule);
+    line-height: 1.4;
+  }
+  .comp-list li:last-child { border-bottom: none; }
+
+  /* Tags */
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag {
+    background: var(--tag-bg);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 3px 7px;
+    font-size: 0.68rem;
+    color: var(--ink-2);
+  }
+
+  /* Education */
+  .edu-item { margin-bottom: 10px; }
+  .edu-name { font-size: 0.78rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+  .edu-inst { font-size: 0.72rem; color: var(--ink-3); }
+
+  /* Lang */
+  .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .lang-name { font-size: 0.78rem; font-weight: 500; color: var(--ink); }
+  .lang-level {
+    font-size: 0.67rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
+
+  /* Avail */
+  .avail-box {
+    background: var(--ink);
+    border-radius: 6px;
+    padding: 14px;
+    text-align: center;
+  }
+  .avail-status {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .avail-text {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #FAFAF8;
+    line-height: 1.3;
+  }
+  .avail-modes {
+    font-size: 0.68rem;
+    color: #888;
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+
+  /* Contact sidebar */
+  .contact-item { display: flex; flex-direction: column; margin-bottom: 8px; }
+  .contact-label { font-size: 0.62rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-3); }
+  .contact-value { font-size: 0.75rem; color: var(--ink-2); word-break: break-all; }
+
+  /* ── PRINT ── */
+  @media print {
+    body { background: #fff; font-size: 13px; }
+    .page { margin: 0; box-shadow: none; width: 100%; }
+    .cv-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .metrics-strip, .achieve-item, .avail-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    a { color: inherit !important; }
+  }
+
+  /* ── PRINT INSTRUCTIONS (screen only) ── */
+  .print-hint {
+    text-align: center;
+    padding: 12px;
+    font-size: 0.78rem;
+    color: #777;
+    background: #FFF8F0;
+    border-bottom: 1px solid #EEE;
+  }
+  @media print { .print-hint { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="print-hint">
+  Para guardar como PDF: <strong>Archivo → Imprimir → Guardar como PDF</strong> · Tamaño: A4 · Sin márgenes o márgenes mínimos.
+</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="cv-header">
+    <div class="header-name">Jean Luck Ruiz Granda</div>
+    <div class="header-title">Consultor Operativo &nbsp;·&nbsp; Fractional Leader &nbsp;·&nbsp; AI Enablement</div>
+    <div class="header-meta">
+      <span>📍 Medellín, Colombia</span>
+      <span>✉ <a href="mailto:injeanluck@gmail.com">injeanluck@gmail.com</a></span>
+      <span>📞 +57 300 364 6376</span>
+      <span>🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162</span>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="cv-body">
+
+    <!-- MAIN COLUMN -->
+    <main class="col-main">
+
+      <!-- EXECUTIVE SUMMARY -->
+      <div class="sec-block">
+        <div class="sec-title">Perfil Ejecutivo</div>
+        <p class="summary-text">
+          Profesional con <strong>11 años de experiencia</strong> en liderazgo operativo, gobierno de proyectos y transformación organizacional en el sector financiero, asegurador y tecnológico de LATAM. He dirigido <strong>hasta 105 profesionales de manera simultánea</strong> en estructuras multinivel con operaciones activas en <strong>6 países</strong>. Construí desde cero la vertical de servicios y el Centro de Excelencia en Sofka Technologies, gestionando clientes de alta exigencia como Sura, Credicorp, Protección y Global Bank.
+        </p>
+        <br>
+        <p class="summary-text">
+          Combino <strong>visión ejecutiva con capacidad de ejecución directa</strong> — entiendo tanto la sala de juntas como la operación diaria. Uso inteligencia artificial de forma práctica en procesos, productividad y modelos de negocio. Disponible para roles de Fractional COO, Head of Operations, PMO Director, Advisory o Consultoría Operativa. <strong>Inicio en 30 días. Inglés B2 (MCER).</strong>
+        </p>
+      </div>
+
+      <!-- METRICS -->
+      <div class="metrics-strip">
+        <div class="metric-cell">
+          <div class="metric-num">11<sup style="font-size:1rem">+</sup></div>
+          <div class="metric-label">Años de<br>experiencia</div>
+        </div>
+        <div class="metric-cell">
+          <div class="metric-num">105</div>
+          <div class="metric-label">Líderes bajo<br>dirección directa</div>
+        </div>
+        <div class="metric-cell">
+          <div class="metric-num">6</div>
+          <div class="metric-label">Países LATAM<br>con operaciones</div>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="sec-block">
+        <div class="sec-title">Experiencia Profesional</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company">Tech and Solve · Consultor Independiente</div>
+            <div class="exp-period">2018 – Presente</div>
+          </div>
+          <div class="exp-role">Consultor Operativo · PMO · Fractional Leader · AI Enablement</div>
+          <ul class="exp-bullets">
+            <li>Construcción desde cero de la vertical de servicios y Centro de Excelencia (CoE) en <strong>Sofka Technologies</strong> — diseño del modelo de negocio, estructuración, onboarding y dirección de <strong>105 profesionales en 6 países de LATAM</strong>.</li>
+            <li>Gobierno de proyectos de transformación para clientes del sector financiero, asegurador y comercial: <strong>Sura, Credicorp, Protección, Global Bank, Comfama, Puntos Colombia</strong>, entre otros.</li>
+            <li>Participación activa en pre-venta técnica y cierre de propuestas ejecutivas de consultoría de alto valor.</li>
+            <li>Diseño e implementación de sistemas operativos asistidos por IA: agentes internos, automatización de SOPs, flujos de productividad.</li>
+            <li>Acompañamiento a líderes ejecutivos con marco de <strong>Conscious Business (Kofman)</strong>: responsabilidad, compromisos, comunicación efectiva.</li>
+          </ul>
+        </div>
+
+        <hr class="exp-divider">
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company">BPO · Operaciones — Avianca / LifeMiles</div>
+            <div class="exp-period">2013 – 2018</div>
+          </div>
+          <div class="exp-role">Líder de Operaciones · Gestión de Cuentas Estratégicas</div>
+          <ul class="exp-bullets">
+            <li>Dirección de operaciones de servicio de alto volumen para cuentas del sector aeronáutico y financiero de primer nivel.</li>
+            <li>Sostuvo <strong>márgenes operativos superiores al 30% durante 3 años consecutivos</strong> en entorno de alta rotación y presión de costos.</li>
+            <li>Diseño e implementación de sistema de gestión operativa escalable aplicado a múltiples cuentas simultáneas en LATAM.</li>
+            <li>Gestión de equipos multiculturales con presencia en Colombia, México, Guatemala, Honduras y otros mercados.</li>
+          </ul>
+        </div>
+
+        <hr class="exp-divider">
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company">Smurfit Kappa</div>
+            <div class="exp-period">2016 – 2017</div>
+          </div>
+          <div class="exp-role">Gestión Industrial · Operaciones de Manufactura</div>
+          <ul class="exp-bullets">
+            <li>Aplicación de prácticas operativas en entorno de manufactura de alta exigencia.</li>
+            <li>Exposición a sistemas de control de producción, KPIs industriales y gestión de equipos de piso.</li>
+          </ul>
+        </div>
+
+        <hr class="exp-divider">
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company">IAC</div>
+            <div class="exp-period">2013 – 2015</div>
+          </div>
+          <div class="exp-role">Operaciones · Gestión de Procesos</div>
+          <ul class="exp-bullets">
+            <li>Primeros años en gestión de operaciones y procesos. Base de formación práctica en ejecución operativa y liderazgo de equipos.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- KEY ACHIEVEMENTS -->
+      <div class="sec-block">
+        <div class="sec-title">Logros Clave</div>
+        <div class="achieve-grid">
+          <div class="achieve-item">
+            <div class="achieve-metric">&gt;30% Margen · 3 Años</div>
+            <div class="achieve-desc">Margen operativo sostenido en cuentas del sector financiero LATAM bajo presión de costos y crecimiento acelerado.</div>
+          </div>
+          <div class="achieve-item">
+            <div class="achieve-metric">CoE desde Cero</div>
+            <div class="achieve-desc">Centro de Excelencia construido desde cero en Sofka Technologies. Modelo de negocio, estructura, onboarding y dirección.</div>
+          </div>
+          <div class="achieve-item">
+            <div class="achieve-metric">105 Líderes · 6 Países</div>
+            <div class="achieve-desc">Dirección simultánea máxima de 105 profesionales en estructuras multinivel con operaciones activas en LATAM.</div>
+          </div>
+          <div class="achieve-item">
+            <div class="achieve-metric">PMO + Rescue</div>
+            <div class="achieve-desc">Gobierno de proyectos críticos y rescate de iniciativas en crisis en banca, seguros y sector comercial de alta exigencia.</div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="col-side">
+
+      <!-- AVAILABILITY -->
+      <div class="side-sec">
+        <div class="avail-box">
+          <div class="avail-status">Disponible ahora</div>
+          <div class="avail-text">Inicio en<br>30 días</div>
+          <div class="avail-modes">Remoto · Híbrido · Presencial<br>LATAM · Inglés B2</div>
+        </div>
+      </div>
+
+      <!-- CORE COMPETENCIES -->
+      <div class="side-sec">
+        <div class="side-title">Competencias Clave</div>
+        <ul class="comp-list">
+          <li>Liderazgo operativo multinivel</li>
+          <li>Gobierno de proyectos (PMO)</li>
+          <li>Transformación organizacional</li>
+          <li>Fractional COO / Chief of Staff</li>
+          <li>AI Enablement estratégico</li>
+          <li>Escalamiento de operaciones</li>
+          <li>Pre-venta y habilitación comercial</li>
+          <li>Conscious Leadership (Kofman)</li>
+          <li>Diagnóstico e Inception</li>
+          <li>Dirección de equipos distribuidos</li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="side-sec">
+        <div class="side-title">Servicios / Roles</div>
+        <div class="tags">
+          <span class="tag">Fractional COO</span>
+          <span class="tag">Head of Operations</span>
+          <span class="tag">Chief of Staff</span>
+          <span class="tag">PMO as a Service</span>
+          <span class="tag">Consultoría Operativa</span>
+          <span class="tag">AI Enablement</span>
+          <span class="tag">Coaching Ejecutivo</span>
+          <span class="tag">Inception &amp; Discovery</span>
+          <span class="tag">Advisory Estratégico</span>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="side-sec">
+        <div class="side-title">Formación</div>
+        <div class="edu-item">
+          <div class="edu-name">Tecnólogo en Mecatrónica</div>
+          <div class="edu-inst">SENA · 2017</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-name">Gestión Ágil · PMO · Gobierno de Proyectos</div>
+          <div class="edu-inst">Formación aplicada · 2015–presente</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-name">Inteligencia Artificial Aplicada al Negocio</div>
+          <div class="edu-inst">Formación continua · 2022–presente</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-name">Conscious Business (Fred Kofman)</div>
+          <div class="edu-inst">Marco filosófico aplicado</div>
+        </div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="side-sec">
+        <div class="side-title">Idiomas</div>
+        <div class="lang-item">
+          <span class="lang-name">Español</span>
+          <span class="lang-level">Nativo</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">Inglés</span>
+          <span class="lang-level">B2 · MCER</span>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="side-sec">
+        <div class="side-title">Contacto</div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">injeanluck@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+57 300 364 6376</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">jean-luck-ruiz-granda-a35088162</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Ubicación</span>
+          <span class="contact-value">Medellín, Colombia · LATAM</span>
+        </div>
+      </div>
+
+    </aside>
+  </div><!-- /cv-body -->
+</div><!-- /page -->
+
+</body>
+</html>
