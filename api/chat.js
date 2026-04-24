@@ -1,17 +1,18 @@
 'use strict';
 
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { GoogleGenAI } = require('@google/genai');
 const { JEAN_SYSTEM_PROMPT, getFallbackResponse } = require('../config/assistant');
 
+const MODEL = 'gemini-2.0-flash-lite';
+
 // Basic in-memory rate limiting per IP
-// Note: resets across cold starts — sufficient for personal-site traffic
+// Resets on cold start — sufficient for personal-site traffic
 const rateLimitStore = new Map();
 
 function checkRateLimit(ip) {
   const now = Date.now();
   const WINDOW_MS = 60_000;
   const MAX_REQUESTS = 15;
-
   const record = rateLimitStore.get(ip) || { count: 0, resetAt: now + WINDOW_MS };
   if (now > record.resetAt) {
     record.count = 0;
@@ -37,19 +38,20 @@ function validateMessage(message) {
   return null;
 }
 
-function formatHistoryForGemini(history) {
-  if (!Array.isArray(history)) return [];
-  return history
-    .slice(-10) // last 10 turns for context window efficiency
+// Build contents array: history turns + current user message
+function buildContents(history, message) {
+  const turns = (Array.isArray(history) ? history : [])
+    .slice(-10)
     .filter(t => t && t.role && t.content)
     .map(turn => ({
       role: turn.role === 'user' ? 'user' : 'model',
       parts: [{ text: String(turn.content).slice(0, 1000) }]
     }));
+  turns.push({ role: 'user', parts: [{ text: message.trim() }] });
+  return turns;
 }
 
 module.exports = async function handler(req, res) {
-  // CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -59,7 +61,6 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Rate limiting
   const ip = getClientIp(req);
   if (checkRateLimit(ip)) {
     return res.status(429).json({
@@ -69,7 +70,6 @@ module.exports = async function handler(req, res) {
 
   const { message, history = [] } = req.body || {};
 
-  // Input validation
   const validationError = validateMessage(message);
   if (validationError) {
     return res.status(400).json({ error: validationError });
@@ -77,42 +77,50 @@ module.exports = async function handler(req, res) {
 
   const apiKey = process.env.GEMINI_API_KEY;
 
-  // Fallback mode — no API key configured
   if (!apiKey || apiKey === 'your_gemini_api_key_here') {
+    console.log('[JeanTwin] GEMINI_API_KEY not set — serving fallback mode');
     return res.status(200).json({
       response: getFallbackResponse(message),
       mode: 'fallback'
     });
   }
 
-  try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash',
-      systemInstruction: JEAN_SYSTEM_PROMPT,
-    });
+  console.log(`[JeanTwin] Key present (${apiKey.slice(0, 6)}…), calling ${MODEL}`);
 
-    const chat = model.startChat({
-      history: formatHistoryForGemini(history),
-      generationConfig: {
+  try {
+    const ai = new GoogleGenAI({ apiKey });
+
+    const result = await ai.models.generateContent({
+      model: MODEL,
+      contents: buildContents(history, message),
+      config: {
+        systemInstruction: JEAN_SYSTEM_PROMPT,
         maxOutputTokens: 500,
         temperature: 0.7,
         topP: 0.85,
-        topK: 40,
-      },
-      safetySettings: [
-        { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_MEDIUM_AND_ABOVE' },
-        { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_MEDIUM_AND_ABOVE' },
-      ],
+      }
     });
 
-    const result = await chat.sendMessage(message.trim());
-    const response = result.response.text();
+    const response = result.text;
 
+    if (!response) {
+      console.warn('[JeanTwin] Empty response from Gemini — using fallback');
+      return res.status(200).json({
+        response: getFallbackResponse(message),
+        mode: 'fallback'
+      });
+    }
+
+    console.log('[JeanTwin] Gemini responded OK');
     return res.status(200).json({ response, mode: 'gemini' });
+
   } catch (err) {
-    console.error('[Jean Twin API] Gemini error:', err?.message || err);
-    // Graceful degradation to fallback KB
+    console.error('[JeanTwin] Gemini API error:', {
+      name:    err?.name,
+      message: err?.message,
+      status:  err?.status,
+      code:    err?.code,
+    });
     return res.status(200).json({
       response: getFallbackResponse(message),
       mode: 'fallback'
