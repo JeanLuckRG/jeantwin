@@ -156,58 +156,127 @@ Ejemplo: "Soy Jean Twin, el asistente de Jean Luck. Puedo contarte sobre sus ser
 - Cuando el tema requiere conversación real, escala inmediatamente a Jean
 `;
 
-const FALLBACK_KB = {
-  inception: {
-    kw: ['inception', 'discovery', 'diagnóstico', 'diagnosi', 'donde empezar', 'no sé por dónde', 'no se por donde', 'primer paso'],
-    r: `El mejor punto de partida suele ser un Inception & Discovery — una sesión estructurada donde Jean diagnóstica el contexto real, mapea los problemas y define el camino antes de comprometerse con una solución.\n\nEvita invertir en la solución equivocada. Entregable concreto al final.\n\n¿Quieres agendar esa primera conversación? → https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+// Each topic has `rs` — an array of response variants. One is picked at random
+// so repeated questions on the same topic return different phrasing.
+const FALLBACK_KB = [
+  {
+    id: 'servicios',
+    kw: ['servicio', 'ofrece', 'hace', 'ayuda', 'especialidad', 'area', 'área', 'consul', 'qué hace', 'que hace', 'portafolio'],
+    rs: [
+      `Jean ofrece 6 servicios:\n\n✨ Inception & Discovery — diagnóstico antes de comprometerse con una solución\n🧠 Conscious Leadership Coaching — liderazgo basado en Kofman\n🤖 AI Enablement — IA aplicada a operación real\n👔 Fractional Ops Leadership — COO / Head of Ops temporal\n📊 PMO / Delivery — gobierno de proyectos críticos\n🔧 Consultoría Operativa — estructuras que escalan\n\n¿Cuál se acerca más a tu situación?`,
+      `Jean trabaja en tres grandes áreas:\n\n→ Liderazgo ejecutivo: Fractional COO, Head of Operations, Chief of Staff\n→ Transformación operativa: diagnóstico, restructuración, escalamiento\n→ IA aplicada: agentes, automatización, SOPs inteligentes\n\nCada servicio parte de entender el problema real antes de proponer solución. ¿Qué está pasando en tu operación?`
+    ]
   },
-  coaching: {
-    kw: ['coaching', 'liderazgo consciente', 'kofman', 'conscious', 'coach', 'líder', 'lider', 'cultura', 'equipo'],
-    r: `Jean ofrece Conscious Leadership Coaching — acompañamiento 1:1 basado en la filosofía de Fred Kofman (Conscious Business).\n\nIdeal para líderes que quieren pasar de administrar a liderar de verdad: responsabilidad, compromisos, presencia, comunicación efectiva.\n\n¿Quieres más detalles o prefieres hablar directamente con Jean? → https://wa.me/573003646376`
+  {
+    id: 'tarifas',
+    kw: ['precio', 'tarifa', 'costo', 'cuánto', 'cuanto', 'cobra', 'inversión', 'inversion', 'honorario', 'fee', 'cuánto cuesta', 'cuanto cuesta', 'pago', 'presupuesto'],
+    rs: [
+      `Jean no publica tarifas fijas — cada engagement se dimensiona según alcance y duración.\n\nTrabaja con dos esquemas:\n📋 Por proyecto — entregables y precio definidos al inicio\n📅 Retainer mensual — engagement continuo con alcance acordado\n\nLa mejor forma de evaluar el fit económico es una llamada de 30 min sin compromiso:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`,
+      `Los precios varían según el tipo de servicio:\n\n→ Consultoría puntual: propuesta a medida por proyecto\n→ Fractional / retainer: engagement mensual (el alcance define el costo)\n→ Advisory: sesiones periódicas acordadas\n\nNo hay tarifas publicadas porque cada situación es diferente. Escríbele directamente:\n→ https://wa.me/573003646376`
+    ]
   },
-  ia: {
-    kw: ['ia', 'inteligencia artificial', 'automatización', 'automatizacion', 'agente', 'sop', 'ai', 'bot', 'gpt', 'automatizar'],
-    r: `Jean usa IA de forma práctica — no como buzzword, sino como herramienta de ejecución real.\n\nAI Enablement incluye: diagnóstico de oportunidades de automatización, SOPs asistidos por IA, diseño de agentes internos, y sistemas operativos con IA como motor.\n\nEl punto de partida siempre es: ¿qué problema real resuelve? No implementa por moda.\n\n¿Tienes algún proceso específico en mente?`
+  {
+    id: 'experiencia',
+    kw: ['experiencia', 'trayectoria', 'logro', 'historial', 'carrera', 'background', 'trabajó', 'años', 'perfil', 'cv', 'curriculum', 'hoja de vida', 'sofka', 'smurfit', 'avianca'],
+    rs: [
+      `Jean tiene 11 años de experiencia, con 8+ en liderazgo de operaciones.\n\nMétricas clave:\n→ 105 profesionales bajo dirección directa (simultáneo)\n→ Operaciones activas en 6 países de LATAM\n→ Margen operativo >30% sostenido 3 años en sector financiero\n→ Inglés B2 · MCER\n\nHa construido desde cero la vertical de servicios y CoE en Sofka Technologies. ¿Qué parte de su trayectoria te interesa?`,
+      `Trayectoria de Jean:\n\n2013–2018 → BPO / Avianca / LifeMiles — operaciones de alto volumen, sector financiero y aerolíneas\n2016–2017 → Smurfit Kappa — gestión industrial\n2018–hoy → Tech and Solve — consultoría operativa y PMO\nSofka Technologies — construcción del CoE y vertical de proyectos (105 líderes, 6 países)\n\nActualmente disponible como consultor independiente. ¿Buscas algo específico en su historial?`
+    ]
   },
-  fractional: {
-    kw: ['fractional', 'coo', 'part-time', 'parcial', 'temporal', 'operaciones', 'chief', 'head of'],
-    r: `El Fractional Operations Leadership es uno de los servicios más potentes de Jean. Obtienes un COO, Head of Operations o Chief of Staff de alto nivel sin el costo de una vinculación full-time.\n\nIdeal para empresas que están creciendo y necesitan estructura ejecutiva real. Disponible en engagement mensual, por proyecto o por horas.\n\nInicio posible en 30 días. Lo mejor es agendar una llamada corta: https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+  {
+    id: 'liderazgo',
+    kw: ['liderazgo', 'líder', 'lider', 'coaching', 'kofman', 'conscious', 'coach', 'cultura', 'equipo', 'leadership', 'gestión de personas', 'gestion de personas', 'desarrollo directivo'],
+    rs: [
+      `Jean ofrece Conscious Leadership Coaching — acompañamiento 1:1 basado en Fred Kofman (Conscious Business).\n\nTrabaja en:\n→ Responsabilidad incondicional — sin culpa ni victimismo\n→ Gestión de compromisos — lo que se dice, se cumple\n→ Comunicación efectiva — directa y sin rodeos\n→ Presencia ejecutiva — liderar desde claridad, no desde miedo\n\nIdeal para líderes que quieren pasar de administrar a liderar de verdad. ¿Te interesa explorarlo?`,
+      `El estilo de liderazgo de Jean es directo, sin rodeos. Alta claridad mental en situaciones complejas. Ve el sistema completo antes de tocar una parte.\n\nHa dirigido 105 profesionales simultáneamente en 6 países — desde la sala de juntas hasta la trinchera operativa.\n\nSi buscas un coach o líder con experiencia real (no solo teoría), el primer paso es una conversación:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+    ]
   },
-  pmo: {
-    kw: ['pmo', 'proyecto', 'gestión', 'gestion', 'gobierno', 'delivery', 'rescate', 'crisis', 'management', 'proyectos'],
-    r: `PMO / Delivery es uno de los servicios de mayor demanda en el portafolio de Jean. Incluye:\n\n→ PMO as a Service — sin infraestructura interna\n→ Gobierno de proyectos — marco de control y visibilidad\n→ Seguimiento ejecutivo — dashboards y alertas tempranas\n→ Rescue de proyectos críticos — intervención en crisis\n\nHa trabajado con clientes de alta exigencia en sectores financiero y empresarial de LATAM. ¿Tu empresa tiene proyectos que necesitan apoyo?`
+  {
+    id: 'reclutadores',
+    kw: ['reclutador', 'recruiter', 'vacante', 'empleo', 'contrato laboral', 'cargo', 'posicion', 'posición', 'oportunidad laboral', 'candidato', 'hire', 'hiring', 'vinculación', 'vinculacion', 'headhunter', 'busca trabajo', 'busco trabajo'],
+    rs: [
+      `Perfil ejecutivo de Jean para reclutadores:\n\n→ 11 años en liderazgo operativo y consultoría\n→ Roles típicos: COO, Head of Operations, Chief of Staff, PMO Lead\n→ 105 profesionales bajo dirección directa (máximo simultáneo)\n→ Operaciones en 6 países LATAM\n→ Inglés B2 · MCER\n→ Inicio disponible en 30 días\n→ Modalidades: remoto, híbrido o presencial\n\nContacto directo:\n✉️ injeanluck@gmail.com\n🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162`,
+      `Jean está abierto a oportunidades de liderazgo ejecutivo:\n\nPerfil: COO / Head of Operations / Chief of Staff / PMO Director\nSectores: cualquier industria con operaciones complejas o equipos distribuidos\nExperiencia: financiero, asegurador, tecnología, comercial — LATAM\nFortalezas: estructura operativa, gobierno de proyectos, IA aplicada, liderazgo multinivel\n\nPreferencia: roles con impacto real y autonomía de ejecución.\n→ Agendar conversación: https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+    ]
   },
-  experiencia: {
-    kw: ['experiencia', 'trayectoria', 'logro', 'historial', 'carrera', 'background', 'trabajó', 'trabajo', 'empresa', 'años', 'perfil'],
-    r: `Jean tiene 11 años de experiencia profesional, con 8+ años en liderazgo de operaciones.\n\nHa dirigido 105 profesionales de manera directa, operado en 6 países de LATAM, y construido desde cero la vertical de servicios y el CoE en Sofka Technologies. Sus clientes incluyen organizaciones líderes del sector financiero, asegurador y comercial de LATAM.\n\nTiene inglés B2 y disponibilidad de inicio en 30 días. ¿Te interesa algún área específica de su experiencia?`
+  {
+    id: 'disponibilidad',
+    kw: ['disponible', 'disponibilidad', 'remoto', 'presencial', 'modalidad', 'cómo trabajas', 'como trabajas', 'inicio', 'cuándo', 'cuando', 'híbrido', 'horario', 'dónde', 'donde trabaja'],
+    rs: [
+      `Jean está disponible con inicio en 30 días.\n\nModalidades:\n📋 Consultoría por proyecto — alcance y entregables definidos\n📅 Retainer mensual — Fractional o engagement continuo\n⏰ Contrato parcial — días u horas por semana\n💡 Advisory estratégico — sesiones periódicas\n\nUbicación base: Medellín, Colombia. Trabaja remoto, híbrido o presencial según el proyecto. Inglés B2.`,
+      `Disponibilidad actual: activo, inicio posible en 30 días.\n\nCómo trabaja:\n→ Remoto para la mayoría de compromisos\n→ Presencial en Medellín o viajes puntuales según necesidad\n→ Disponible para proyectos en LATAM y en inglés\n\nSi tienes urgencia, WhatsApp es la vía más rápida:\n→ https://wa.me/573003646376`
+    ]
   },
-  contacto: {
-    kw: ['contact', 'hablar', 'llamar', 'whatsapp', 'correo', 'email', 'agendar', 'reunión', 'reunion', 'link', 'precio', 'tarifa', 'costo', 'cuánto', 'cuanto', 'cuánto cobra', 'cuanto cobra'],
-    r: `Puedes contactar a Jean directamente:\n\n📅 Agendar reunión: https://calendar.app.google/mNCvbC9qWUPPNVBu5\n💬 WhatsApp: https://wa.me/573003646376\n✉️ Correo: injeanluck@gmail.com\n\nResponde en menos de 24 horas. Sin compromisos.`
+  {
+    id: 'contacto',
+    kw: ['contact', 'hablar', 'llamar', 'whatsapp', 'correo', 'email', 'agendar', 'reunión', 'reunion', 'link', 'conectar', 'escribir', 'comunicar'],
+    rs: [
+      `Canales directos de Jean:\n\n📅 Agendar reunión: https://calendar.app.google/mNCvbC9qWUPPNVBu5\n💬 WhatsApp: https://wa.me/573003646376\n✉️ Correo: injeanluck@gmail.com\n🔗 LinkedIn: linkedin.com/in/jean-luck-ruiz-granda-a35088162\n\nResponde en menos de 24 horas. Sin compromisos.`,
+      `El mejor primer paso es una llamada de discovery de 30 minutos — sin costo, sin compromiso.\n\nEn esa llamada Jean entiende tu situación y te dice si puede ayudar (y si no, también lo dice).\n\n→ Agenda aquí: https://calendar.app.google/mNCvbC9qWUPPNVBu5\n→ O escribe por WhatsApp si prefieres algo más inmediato: https://wa.me/573003646376`
+    ]
   },
-  disponibilidad: {
-    kw: ['disponible', 'disponibilidad', 'contratar', 'remoto', 'presencial', 'modalidad', 'cómo trabajas', 'como trabajas', 'inicio', 'cuándo', 'cuando'],
-    r: `Jean está disponible con inicio en 30 días.\n\nModalidades:\n📋 Consultoría por proyecto (alcance y entregables definidos)\n📅 Engagement mensual (Fractional / retainer)\n⏰ Contrato parcial (días u horas/semana)\n💡 Advisory estratégico\n\nUbicación: Medellín, Colombia — remoto, híbrido o presencial según alcance. Inglés B2. Lo mejor es agendar una llamada de 30 minutos para evaluar el fit.`
+  {
+    id: 'casos',
+    kw: ['caso', 'resultado', 'proyecto real', 'cliente', 'referencia', 'ejemplo', 'impacto', 'trabajo real', 'evidencia', 'hizo', 'realizó', 'realizo', 'logró', 'logro concreto'],
+    rs: [
+      `Dos casos representativos:\n\n🏢 Rentabilidad sostenida en operaciones financieras LATAM\nSistema de gestión operativa que mantuvo márgenes >30% durante 3 años consecutivos — con alta rotación, presión de costos y crecimiento acelerado.\n\n🏗️ Construcción del CoE desde cero en Sofka Technologies\nModelo de negocio, Centro de Excelencia, onboarding y dirección de 105 líderes en 6 países. Clientes en banca, seguros y comercio de alta exigencia.`,
+      `Otros dos casos de Jean:\n\n🎯 Habilitación comercial y pre-venta técnica\nCiclos de pre-venta para grandes cuentas financieras — traducción de necesidades del cliente en propuestas concretas. Acortó ciclos de decisión y mejoró tasa de cierre.\n\n🧠 Transformación cultural con Conscious Business\nAcompañamiento a equipos directivos en sector asegurador. Trabajo con marcos de responsabilidad, compromisos y comunicación efectiva. Impacto en clima organizacional, retención y desempeño.`
+    ]
   },
-  servicios: {
-    kw: ['servicio', 'ofrece', 'hace', 'trabajo', 'ayuda', 'especialidad', 'área', 'consul', 'qué hace', 'que hace'],
-    r: `Jean ofrece 6 servicios principales:\n\n✨ Inception & Discovery — diagnóstico y definición del camino\n🧠 Conscious Leadership Coaching — liderazgo basado en Kofman\n🤖 AI Enablement — IA aplicada a operación real\n👔 Fractional Operations Leadership — COO/Head of Ops temporal\n📊 PMO / Delivery — gobierno de proyectos y seguimiento ejecutivo\n🔧 Consultoría Operativa — diagnóstico y restructuración\n\n¿Cuál se acerca más a lo que necesitas?`
+  {
+    id: 'inception',
+    kw: ['inception', 'discovery', 'diagnóstico', 'diagnosi', 'donde empezar', 'no sé por dónde', 'no se por donde', 'primer paso', 'empezar', 'por donde empiezo'],
+    rs: [
+      `El mejor punto de partida suele ser un Inception & Discovery — una sesión estructurada donde Jean diagnóstica el contexto real, mapea los problemas y define el camino antes de comprometerse con una solución.\n\nEvita invertir en la solución equivocada. Entregable concreto al final.\n\n¿Quieres agendar esa primera conversación?\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+    ]
   },
-  vision: {
-    kw: ['visión', 'vision', 'propuesta', 'valor', 'filosofía', 'filosofia', 'enfoque', 'diferencia', 'quién es', 'quien es'],
-    r: `La visión de Jean es clara:\n\n"Ayudo organizaciones y emprendedores a pasar del caos operativo hacia sistemas claros, ejecutables y rentables."\n\nCombina 11 años de experiencia real en liderazgo operativo con el uso estratégico de IA. No vende teoría — busca impacto tangible, claridad y capacidad de crecimiento. Cree en empresas más inteligentes, ligeras y humanas.`
+  {
+    id: 'ia',
+    kw: ['ia', 'inteligencia artificial', 'automatización', 'automatizacion', 'agente', 'sop', 'ai', 'bot', 'gpt', 'automatizar', 'claude', 'gemini', 'chatgpt', 'llm'],
+    rs: [
+      `Jean usa IA de forma práctica — no como buzzword, sino como herramienta de ejecución real.\n\nAI Enablement incluye: diagnóstico de oportunidades de automatización, SOPs asistidos por IA, diseño de agentes internos, y sistemas operativos con IA como motor.\n\nEl punto de partida siempre es: ¿qué problema real resuelve? No implementa por moda.\n\n¿Tienes algún proceso específico en mente?`
+    ]
+  },
+  {
+    id: 'fractional',
+    kw: ['fractional', 'coo', 'part-time', 'chief of staff', 'head of ops', 'head of operations', 'liderazgo ejecutivo temporal'],
+    rs: [
+      `El Fractional Operations Leadership es uno de los servicios más potentes de Jean. Obtienes un COO, Head of Operations o Chief of Staff de alto nivel sin el costo de una vinculación full-time.\n\nIdeal para empresas en crecimiento que necesitan estructura ejecutiva real. Disponible en engagement mensual, por proyecto o por horas.\n\nInicio posible en 30 días:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+    ]
+  },
+  {
+    id: 'pmo',
+    kw: ['pmo', 'gobierno de proyectos', 'delivery', 'rescate de proyecto', 'crisis de proyecto', 'seguimiento ejecutivo', 'proyectos en crisis', 'project management'],
+    rs: [
+      `PMO / Delivery es uno de los servicios de mayor demanda en el portafolio de Jean:\n\n→ PMO as a Service — sin infraestructura interna\n→ Gobierno de proyectos — marco de control y visibilidad\n→ Seguimiento ejecutivo — dashboards y alertas tempranas\n→ Rescue de proyectos críticos — intervención en crisis\n\n¿Tu empresa tiene proyectos que necesitan apoyo?`
+    ]
+  },
+  {
+    id: 'vision',
+    kw: ['visión', 'vision', 'propuesta de valor', 'filosofía', 'filosofia', 'enfoque', 'diferencial', 'quién es jean', 'quien es jean', 'qué lo diferencia', 'que lo diferencia'],
+    rs: [
+      `La visión de Jean es clara:\n\n"Ayudo organizaciones y emprendedores a pasar del caos operativo hacia sistemas claros, ejecutables y rentables."\n\nCombina 11 años de experiencia real en liderazgo operativo con el uso estratégico de IA. No vende teoría — busca impacto tangible. Cree en empresas más inteligentes, ligeras y humanas.`
+    ]
   }
-};
+];
+
+function normalize(str) {
+  return (str || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
 
 function getFallbackResponse(message) {
-  const q = (message || '').toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '');
-  for (const topic of Object.values(FALLBACK_KB)) {
-    if (topic.kw.some(k => q.includes(k.normalize('NFD').replace(/[̀-ͯ]/g, '')))) {
-      return topic.r;
+  const q = normalize(message);
+  for (const topic of FALLBACK_KB) {
+    if (topic.kw.some(k => q.includes(normalize(k)))) {
+      const { rs } = topic;
+      return rs[Math.floor(Math.random() * rs.length)];
     }
   }
-  return `Soy Jean Twin, el asistente digital de Jean Luck Ruiz Granda.\n\nJean es consultor operativo, Fractional Leader e integrador de IA con 11 años de experiencia y presencia en 6 países de LATAM. Puedo contarte sobre sus servicios, experiencia y cómo puede ayudar a tu organización.\n\n¿Qué quieres saber?`;
+  const defaults = [
+    `Soy Jean Twin, el asistente digital de Jean Luck Ruiz Granda.\n\nJean es consultor operativo, Fractional Leader e integrador de IA con 11 años de experiencia en 6 países de LATAM.\n\nPuedes preguntarme sobre sus servicios, experiencia, disponibilidad o casos. ¿Por dónde empezamos?`,
+    `Hola, soy Jean Twin — el representante digital de Jean Luck.\n\nPuedo contarte sobre:\n→ Servicios y especialidades\n→ Experiencia y trayectoria\n→ Disponibilidad y modalidades\n→ Cómo contactarlo directamente\n\n¿Qué quieres saber?`
+  ];
+  return defaults[Math.floor(Math.random() * defaults.length)];
 }
 
 module.exports = { JEAN_SYSTEM_PROMPT, getFallbackResponse };

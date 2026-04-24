@@ -72,6 +72,23 @@ const chatSuggests  = document.getElementById('chat-suggestions');
 
 // Conversation history for context (last N turns)
 const conversationHistory = [];
+let fallbackNoticeShown = false;
+
+function showFallbackNotice() {
+  const notice = document.createElement('div');
+  notice.setAttribute('role', 'status');
+  notice.style.cssText = [
+    'display:flex', 'align-items:center', 'gap:6px',
+    'margin:8px 12px 4px', 'padding:6px 10px',
+    'border-radius:6px', 'border:1px solid rgba(212,175,55,0.25)',
+    'background:rgba(212,175,55,0.07)',
+    'font-size:0.72rem', 'color:rgba(212,175,55,0.75)',
+    'line-height:1.4'
+  ].join(';');
+  notice.innerHTML = '<span style="font-size:0.8rem">⚠️</span> Modo demostración: respuestas limitadas hasta conectar IA real.';
+  chatMessages.appendChild(notice);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
 
 function addMessage(html, role) {
   const wrapper = document.createElement('div');
@@ -138,6 +155,11 @@ async function sendMessage() {
     const data = await res.json();
     const reply = data.response || 'No pude generar una respuesta. Intenta de nuevo.';
     addMessage(reply, 'bot');
+
+    if (data.mode === 'fallback' && !fallbackNoticeShown) {
+      fallbackNoticeShown = true;
+      showFallbackNotice();
+    }
 
     // Update history
     conversationHistory.push({ role: 'user', content: text });
