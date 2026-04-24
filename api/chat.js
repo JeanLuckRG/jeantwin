@@ -3,7 +3,7 @@
 const { GoogleGenAI } = require('@google/genai');
 const { JEAN_SYSTEM_PROMPT, getFallbackResponse } = require('../config/assistant');
 
-const MODEL = 'gemini-2.0-flash-lite';
+const MODEL = 'gemini-1.5-flash-8b';
 
 // Basic in-memory rate limiting per IP
 // Resets on cold start — sufficient for personal-site traffic
@@ -115,12 +115,28 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ response, mode: 'gemini' });
 
   } catch (err) {
+    const httpStatus = err?.status ?? err?.httpStatus ?? 0;
+    const errMsg     = String(err?.message || '').toLowerCase();
+    const is429      = httpStatus === 429
+      || errMsg.includes('quota')
+      || errMsg.includes('exhausted')
+      || errMsg.includes('429');
+
     console.error('[JeanTwin] Gemini API error:', {
       name:    err?.name,
       message: err?.message,
-      status:  err?.status,
+      status:  httpStatus,
       code:    err?.code,
+      is429,
     });
+
+    if (is429) {
+      return res.status(200).json({
+        response: 'Jean Twin está recibiendo muchas consultas en este momento. Intenta de nuevo en unos minutos, o contacta a Jean directamente:\n→ WhatsApp: https://wa.me/573003646376\n→ Correo: injeanluck@gmail.com',
+        mode: 'quota'
+      });
+    }
+
     return res.status(200).json({
       response: getFallbackResponse(message),
       mode: 'fallback'

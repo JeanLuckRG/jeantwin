@@ -10,7 +10,7 @@ module.exports = function handler(req, res) {
     status:            'ok',
     gemini_configured: configured,
     key_prefix:        configured ? key.slice(0, 6) + '…' : null,
-    model:             'gemini-2.0-flash-lite',
+    model:             'gemini-1.5-flash-8b',
     ts:                new Date().toISOString()
   });
 };
