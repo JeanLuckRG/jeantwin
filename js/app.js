@@ -171,8 +171,7 @@ chatInput.addEventListener('keydown', e => {
 });
 
 /* ── CONTACT FORM ────────────────────────────────────────────── */
-// COMPLETAR: reemplaza YOUR_FORM_ID con tu ID de Formspree
-const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_URL = 'https://formspree.io/f/mjgjlrwz';
 
 window.handleFormSubmit = async function(e) {
   e.preventDefault();
