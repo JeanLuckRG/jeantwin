@@ -19,8 +19,8 @@ financiero, asegurador y tecnológico de LATAM.
 
 He dirigido hasta 105 profesionales de manera simultánea en
 estructuras multinivel con operaciones activas en 6 países.
-Construí desde cero la vertical de servicios y el Centro de
-Excelencia en Sofka Technologies, atendiendo clientes como Sura,
+Co-fundé y dirigí el Centro de Excelencia Management en Sofka
+Technologies (2020–Presente), atendiendo clientes como Sura,
 Credicorp, Protección, Global Bank y Comfama.
 
 Combino visión ejecutiva con capacidad de ejecución directa.
@@ -36,31 +36,54 @@ ESCALA DE LIDERAZGO
   105 profesionales bajo dirección directa (máximo simultáneo)
     6 países de LATAM con operaciones activas
   >30% margen operativo sostenido 3 años consecutivos
+   +20% velocidad operativa de equipos (Sofka Technologies)
+   -30% tiempo de procesamiento de datos (Business Analyst, Sofka)
 
 
 ──────────────────────────────────────────────────────────────────
 EXPERIENCIA PROFESIONAL
 ──────────────────────────────────────────────────────────────────
 
-TECH AND SOLVE · CONSULTOR INDEPENDIENTE (2018 – Presente)
-Consultor Operativo · PMO · Fractional Leader · AI Enablement
+SOFKA TECHNOLOGIES · ENTERPRISE COACH (2020 – Presente)
+CoE Management · Medellín, Colombia
 
-  - Construcción desde cero de la vertical de servicios y
-    Centro de Excelencia (CoE) en Sofka Technologies — diseño
-    del modelo de negocio, estructuración, onboarding y dirección
-    de 105 profesionales en 6 países de LATAM.
+  - Co-fundé y dirigí el Centro de Excelencia (CoE) Management
+    de Sofka Technologies — diseño del modelo de negocio,
+    estructuración, onboarding y dirección de 105 profesionales
+    en 6 países de LATAM.
 
-  - Gobierno de proyectos de transformación para clientes del
-    sector financiero, asegurador y comercial: Sura Colombia,
-    Sura México, Credicorp, Protección, Global Bank, Comfama,
-    Puntos Colombia, Grupo Éxito, entre otros.
+  - Alineo estrategia y ejecución en cuentas clave. Diseño y
+    gestión de indicadores (OKR, KPI) para medir valor, desempeño
+    y riesgos en clientes como Sura, Credicorp, Protección,
+    Global Bank, Comfama y Puntos Colombia.
 
-  - Participación en ciclos de pre-venta técnica y propuestas
-    ejecutivas de consultoría de alto valor.
+  - Scrum Master: Incremento de hasta el 20% en la velocidad
+    operativa de equipos mediante facilitación, formación,
+    gestión de riesgos y modelos de respuesta al cambio.
 
-  - Diseño e implementación de sistemas operativos asistidos por
-    IA: agentes internos, automatización de SOPs, flujos de
-    productividad con herramientas de IA generativa.
+  - Project Manager: Liderazgo y rescate de proyectos críticos
+    >1M USD — recuperación de tiempos, alcance y costos en
+    implementaciones de alta complejidad.
+
+  - Business Analyst: Levantamiento y rediseño de procesos
+    operativos apoyados en IA, reduciendo en 30% el tiempo
+    de procesamiento de datos.
+
+  - Lideré diagnósticos ágiles, modelos de madurez y gobierno
+    de equipos con foco en impacto de negocio sostenido.
+
+
+TECH AND SOLVE · GESTOR DE PROYECTOS / SCRUM MASTER (2017 – 2020)
+Consultoría · Medellín, Colombia
+
+  - Gestión de proyectos de transformación y consultoría
+    operativa para clientes del sector financiero y comercial.
+
+  - Aplicación de marcos ágiles (Scrum, SAFe) y gestión PMO
+    en proyectos de mediana y alta complejidad.
+
+  - Participación en pre-venta técnica y construcción de
+    propuestas ejecutivas de consultoría de alto valor.
 
   - Acompañamiento a líderes con marco Conscious Business
     (Fred Kofman): responsabilidad, compromisos, comunicación.
@@ -99,24 +122,30 @@ Operaciones · Gestión de Procesos
 LOGROS CLAVE
 ──────────────────────────────────────────────────────────────────
 
+  ★  CoE Management co-fundado en Sofka Technologies (2020)
+     Estructura desde cero, 105 profesionales, 6 países LATAM
+
+  ★  +20% velocidad operativa de equipos
+     Scrum Master en Sofka Technologies
+
+  ★  Proyectos >1M USD liderados y rescatados
+     Project Manager — banca, seguros, sector comercial
+
+  ★  -30% tiempo de procesamiento de datos
+     Business Analyst — rediseño de procesos con IA aplicada
+
   ★  >30% margen operativo sostenido por 3 años consecutivos
-     en cuentas del sector financiero LATAM
-
-  ★  Centro de Excelencia construido desde cero en Sofka
-     Technologies — modelo, estructura, onboarding completo
-
-  ★  105 líderes dirigidos simultáneamente en 6 países LATAM
-
-  ★  Gobierno de proyectos críticos y rescate de iniciativas
-     en crisis en banca, seguros y comercio
+     Operaciones BPO — Avianca / LifeMiles
 
 
 ──────────────────────────────────────────────────────────────────
 COMPETENCIAS CLAVE
 ──────────────────────────────────────────────────────────────────
 
+  · Enterprise Coaching · CoE Management
   · Liderazgo operativo multinivel
   · Gobierno de proyectos (PMO)
+  · Scrum Master · SAFe · Marcos ágiles
   · Transformación organizacional
   · Fractional COO / Chief of Staff
   · AI Enablement estratégico
@@ -132,19 +161,20 @@ SERVICIOS / ROLES DISPONIBLES
 
   Fractional COO         |  Head of Operations
   Chief of Staff         |  PMO as a Service
-  Consultoría Operativa  |  AI Enablement
-  Coaching Ejecutivo     |  Advisory Estratégico
-  Inception & Discovery  |
+  Enterprise Coach       |  AI Enablement
+  Consultoría Operativa  |  Advisory Estratégico
+  Inception & Discovery  |  Coaching Ejecutivo
 
 
 ──────────────────────────────────────────────────────────────────
 FORMACIÓN Y CREDENCIALES
 ──────────────────────────────────────────────────────────────────
 
+  Conscious Business Coaching — cbcinternational · Fred Kofman
+  Especialización en Diseño de Productos — SENA
   Tecnólogo en Mecatrónica — SENA (2017)
   Gestión Ágil · PMO · Gobierno de Proyectos — Aplicado (2015–)
   Inteligencia Artificial Aplicada al Negocio (2022–)
-  Conscious Business (Marco Fred Kofman) — Aplicado
 
 
 ──────────────────────────────────────────────────────────────────
@@ -161,7 +191,7 @@ DISPONIBILIDAD
 
   Estado:      Disponible. Inicio en 30 días.
   Modalidades: Remoto · Híbrido · Presencial según alcance
-  Proyectos:   LATAM · Internacional (inglés)
+  Proyectos:   LATAM · Internacional (inglés B2)
   Tipos:       Consultoría por proyecto · Retainer mensual
                Contrato parcial · Advisory estratégico
 
