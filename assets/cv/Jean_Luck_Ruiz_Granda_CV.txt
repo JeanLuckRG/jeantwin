@@ -13,9 +13,10 @@ Disponible: Inicio en 30 días | Remoto / Híbrido / Presencial
 PERFIL EJECUTIVO
 ──────────────────────────────────────────────────────────────────
 
-Profesional con 11 años de experiencia en liderazgo operativo,
-gobierno de proyectos y transformación organizacional en el sector
-financiero, asegurador y tecnológico de LATAM.
+Profesional con más de 10 años de experiencia en liderazgo
+operativo, gobierno de proyectos, coaching empresarial y
+transformación organizacional en el sector financiero, asegurador
+y tecnológico de LATAM.
 
 He dirigido hasta 105 profesionales de manera simultánea en
 estructuras multinivel con operaciones activas en 6 países.
@@ -32,12 +33,12 @@ productividad y modelos de negocio. Sin hype. Con impacto real.
 ESCALA DE LIDERAZGO
 ──────────────────────────────────────────────────────────────────
 
-  11+ años de experiencia profesional
+  10+ años de experiencia profesional
   105 profesionales bajo dirección directa (máximo simultáneo)
     6 países de LATAM con operaciones activas
-  >30% margen operativo sostenido 3 años consecutivos
    +20% velocidad operativa de equipos (Sofka Technologies)
    -30% tiempo de procesamiento de datos (Business Analyst, Sofka)
+  >1M USD en proyectos liderados y rescatados
 
 
 ──────────────────────────────────────────────────────────────────
@@ -73,13 +74,16 @@ CoE Management · Medellín, Colombia
     de equipos con foco en impacto de negocio sostenido.
 
 
-TECH AND SOLVE · GESTOR DE PROYECTOS / SCRUM MASTER (2017 – 2020)
+TECH AND SOLVE · SCRUM MASTER / GESTOR DE PROYECTOS (Dic 2017 – 2020)
 Consultoría · Medellín, Colombia
+
+  - Líder de productividad en marcos metodológicos ágiles,
+    facilitación de proyectos y coaching.
 
   - Gestión de proyectos de transformación y consultoría
     operativa para clientes del sector financiero y comercial.
 
-  - Aplicación de marcos ágiles (Scrum, SAFe) y gestión PMO
+  - Aplicación de marcos ágiles (Scrum, SAFe, Nexus, Less)
     en proyectos de mediana y alta complejidad.
 
   - Participación en pre-venta técnica y construcción de
@@ -89,33 +93,23 @@ Consultoría · Medellín, Colombia
     (Fred Kofman): responsabilidad, compromisos, comunicación.
 
 
-BPO · OPERACIONES — AVIANCA / LIFEMILES (2013 – 2018)
-Líder de Operaciones · Gestión de Cuentas Estratégicas
+SMURFIT KAPPA CARTÓN DE COLOMBIA (Ene 2016 – Jul 2016)
+Mantenimiento de Planta · Medellín, Colombia
 
-  - Dirección de operaciones de servicio de alto volumen para
-    cuentas del sector aeronáutico y financiero de primer nivel.
+  - Mantenimiento preventivo, predictivo y correctivo eléctrico
+    y electrónico en planta de manufactura de alta exigencia.
 
-  - Margen operativo sostenido >30% durante 3 años consecutivos
-    en entorno de alta rotación y presión de costos.
-
-  - Diseño e implementación de sistema de gestión operativa
-    escalable en múltiples cuentas simultáneas en LATAM.
-
-  - Equipos multiculturales en Colombia, México, Guatemala,
-    Honduras y otros mercados de la región.
+  - Diseño y montaje de proyectos de mejora en automatización
+    de procesos industriales.
 
 
-SMURFIT KAPPA (2016 – 2017)
-Gestión Industrial · Operaciones de Manufactura
+IAC — INGENIERÍA ASISTIDA POR COMPUTADOR (Oct 2014 – Ago 2015)
+Soporte de Aplicaciones · Medellín, Colombia
 
-  - Prácticas operativas en manufactura de alta exigencia.
-  - KPIs industriales, control de producción, liderazgo de piso.
+  - Soporte técnico de software CAD para clientes directos.
 
-
-IAC (2013 – 2015)
-Operaciones · Gestión de Procesos
-
-  - Formación práctica en gestión de operaciones y liderazgo.
+  - Primer contacto práctico con entornos de cliente, resolución
+    de problemas y gestión técnica.
 
 
 ──────────────────────────────────────────────────────────────────
@@ -134,9 +128,6 @@ LOGROS CLAVE
   ★  -30% tiempo de procesamiento de datos
      Business Analyst — rediseño de procesos con IA aplicada
 
-  ★  >30% margen operativo sostenido por 3 años consecutivos
-     Operaciones BPO — Avianca / LifeMiles
-
 
 ──────────────────────────────────────────────────────────────────
 COMPETENCIAS CLAVE
@@ -145,11 +136,11 @@ COMPETENCIAS CLAVE
   · Enterprise Coaching · CoE Management
   · Liderazgo operativo multinivel
   · Gobierno de proyectos (PMO)
-  · Scrum Master · SAFe · Marcos ágiles
+  · Scrum Master · SAFe · Nexus · Less · Marcos ágiles
   · Transformación organizacional
   · Fractional COO / Chief of Staff
   · AI Enablement estratégico
-  · Escalamiento de operaciones
+  · Value Proposition Canvas · Design Thinking
   · Pre-venta y habilitación comercial
   · Conscious Leadership (Kofman)
   · Diagnóstico e Inception & Discovery
@@ -170,10 +161,10 @@ SERVICIOS / ROLES DISPONIBLES
 FORMACIÓN Y CREDENCIALES
 ──────────────────────────────────────────────────────────────────
 
+  Ingeniero Industrial — Politécnico Gran Colombiano (2020)
+  Tecnólogo en Mecatrónica — SENA (2015)
   Conscious Business Coaching — cbcinternational · Fred Kofman
   Especialización en Diseño de Productos — SENA
-  Tecnólogo en Mecatrónica — SENA (2017)
-  Gestión Ágil · PMO · Gobierno de Proyectos — Aplicado (2015–)
   Inteligencia Artificial Aplicada al Negocio (2022–)
 
 
