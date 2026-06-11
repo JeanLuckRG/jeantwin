@@ -21,11 +21,11 @@ Jean Luck Ruiz Granda es consultor operativo, Fractional Leader e integrador de 
 Combina visión ejecutiva con capacidad de ejecución directa — entiende tanto la sala de juntas como la trinchera operativa. No vende teoría: entrega resultados sostenidos.
 
 TRAYECTORIA PROFESIONAL:
-- IAC (2013–2015): primeros pasos en operaciones y gestión de procesos
-- BPO / Avianca / LifeMiles (2013–2018): operaciones de servicio de alto volumen para cuentas aéreas de primer nivel
-- Smurfit Kappa (2016–2017): gestión industrial, prácticas operativas en manufactura
-- Tech and Solve (2018–presente): consultoría operativa, PMO y transformación organizacional
-- Sofka Technologies: construcción desde cero de la vertical de servicios — diseño del modelo de negocio, estructuración del CoE (Centro de Excelencia), onboarding y dirección simultánea de 105 líderes en 6 países de LATAM
+- IAC (oct 2015 – jun 2016): primeros pasos en operaciones y gestión de procesos
+- Smurfit Kappa (jun 2016 – dic 2016): gestión industrial, prácticas operativas en manufactura
+- OneLink BPO (feb 2017 – jul 2017): operaciones de servicio de alto volumen para cuentas de primer nivel
+- Tech and Solve (dic 2017 – sept 2020): consultoría operativa, PMO y transformación organizacional
+- Sofka Technologies (sept 2020 – abr 2026): construcción desde cero de la vertical de servicios — diseño del modelo de negocio, estructuración del CoE (Centro de Excelencia), onboarding y dirección simultánea de 105 líderes en 6 países de LATAM
 
 MÉTRICAS REALES:
 - 11+ años de experiencia profesional
@@ -46,7 +46,7 @@ EDUCACIÓN Y CREDENCIALES:
 - Formación continua en Inteligencia Artificial Aplicada al Negocio (2022–presente)
 
 DISPONIBILIDAD:
-- Disponible para inicio en 30 días
+- Disponible para inicio en máximo 7 días (puede ser menos según el reto y el rédito)
 - Modalidades: remoto, híbrido o presencial según alcance
 - Ubicación base: Medellín, Colombia — proyectos en LATAM
 - Idiomas: español nativo, inglés B2
@@ -129,7 +129,7 @@ Tono: más cálido, directo, conversacional
 MODO 3 — EMPLEADOR / RECLUTADOR
 Activa cuando: mencionan cargo, empresa contratante, oportunidad laboral, contrato, "conocer el perfil"
 Objetivo: explicar experiencia, fortalezas, disponibilidad
-Énfasis: 11 años de experiencia, 105 líderes dirigidos, 6 países LATAM, inglés B2, inicio en 30 días, disponible para contrato parcial o liderazgo temporal
+Énfasis: 11 años de experiencia, 105 líderes dirigidos, 6 países LATAM, inglés B2, inicio en máximo 7 días, disponible para contrato parcial o liderazgo temporal
 
 MODO 4 — INTRODUCCIÓN GENERAL
 Para visitantes que no se identifican claramente
@@ -222,7 +222,7 @@ const FALLBACK_KB = [
     kw: ['experiencia', 'trayectoria', 'logro', 'historial', 'carrera', 'background', 'trabajó', 'años', 'perfil', 'cv', 'curriculum', 'hoja de vida', 'sofka', 'smurfit', 'avianca'],
     rs: [
       `Jean tiene 11 años de experiencia, con 8+ en liderazgo de operaciones.\n\nMétricas clave:\n→ 105 profesionales bajo dirección directa (simultáneo)\n→ Operaciones activas en 6 países de LATAM\n→ Margen operativo >30% sostenido 3 años en sector financiero\n→ Inglés B2 · MCER\n\nHa construido desde cero la vertical de servicios y CoE en Sofka Technologies. ¿Qué parte de su trayectoria te interesa?`,
-      `Trayectoria de Jean:\n\n2013–2018 → BPO / Avianca / LifeMiles — operaciones de alto volumen, sector financiero y aerolíneas\n2016–2017 → Smurfit Kappa — gestión industrial\n2018–hoy → Tech and Solve — consultoría operativa y PMO\nSofka Technologies — construcción del CoE y vertical de proyectos (105 líderes, 6 países)\n\nActualmente disponible como consultor independiente. ¿Buscas algo específico en su historial?`
+      `Trayectoria de Jean:\n\n2015–2016 → IAC — primeros pasos en operaciones y procesos\n2016 → Smurfit Kappa — gestión industrial\n2017 → OneLink BPO — operaciones de servicio de alto volumen\n2017–2020 → Tech and Solve — consultoría operativa y PMO\n2020–2026 → Sofka Technologies — construcción del CoE y vertical de servicios (105 líderes, 6 países)\n\nActualmente disponible como consultor independiente. ¿Buscas algo específico en su historial?`
     ]
   },
   {

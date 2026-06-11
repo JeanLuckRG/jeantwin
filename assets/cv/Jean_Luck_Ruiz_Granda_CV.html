@@ -307,14 +307,19 @@
   .cv-photo-wrap {
     float: right;
     margin: 0 0 12px 24px;
-  }
-  .cv-photo {
     width: 88px;
     height: 108px;
-    object-fit: cover;
-    object-position: center top;
+    overflow: hidden;
     border-radius: 4px;
     border: 2px solid var(--rule);
+  }
+  .cv-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transform: scale(1.32);
+    transform-origin: center 36%;
     filter: grayscale(10%);
     display: block;
   }
@@ -424,7 +429,7 @@
     <button class="btn-ab btn-ab-primary" onclick="downloadPDF()">↓ PDF</button>
     <button class="btn-ab btn-ab-ghost" onclick="downloadDOCX()">↓ DOCX</button>
     <a class="btn-ab btn-ab-ghost" href="https://linkedin.com/in/jean-luck-ruiz-granda-a35088162" target="_blank" rel="noopener">LinkedIn ↗</a>
-    <a class="btn-ab btn-ab-ghost" href="/">← Volver al sitio</a>
+    <a class="btn-ab btn-ab-ghost" href="https://jeantwin.vercel.app">← Volver al sitio</a>
   </div>
 </div>
 <div id="ab-toast" class="ab-toast"></div>
@@ -443,6 +448,7 @@
       <span>✉ <a href="mailto:injeanluck@gmail.com">injeanluck@gmail.com</a></span>
       <span>📞 +57 300 364 6376</span>
       <span>🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162</span>
+      <span>🌐 <a href="https://jeantwin.vercel.app" style="color:#AAAAAA;">jeantwin.vercel.app</a></span>
     </div>
   </header>
 
@@ -460,7 +466,7 @@
         </p>
         <br>
         <p class="summary-text">
-          Combino <strong>visión ejecutiva con capacidad de ejecución directa</strong> — entiendo tanto la sala de juntas como la operación diaria. Uso inteligencia artificial de forma práctica en procesos, productividad y modelos de negocio. Disponible para roles de Fractional COO, Head of Operations, PMO Director, Advisory o Consultoría Operativa. <strong>Inicio en 30 días. Inglés B2 (MCER).</strong>
+          Combino <strong>visión ejecutiva con capacidad de ejecución directa</strong> — entiendo tanto la sala de juntas como la operación diaria. Uso inteligencia artificial de forma práctica en procesos, productividad y modelos de negocio. Disponible para roles de Fractional COO, Head of Operations, PMO Director, Advisory o Consultoría Operativa. <strong>Inicio en máx. 7 días. Inglés B2 (MCER).</strong>
         </p>
       </div>
 
@@ -487,7 +493,7 @@
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-company">Sofka Technologies</div>
-            <div class="exp-period">2020 – Presente</div>
+            <div class="exp-period">Sept 2020 – Abr 2026</div>
           </div>
           <div class="exp-role">Enterprise Coach · CoE Management · Medellín, Colombia</div>
           <ul class="exp-bullets">
@@ -505,7 +511,7 @@
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-company">Tech and Solve</div>
-            <div class="exp-period">Dic 2017 – 2020</div>
+            <div class="exp-period">Dic 2017 – Sept 2020</div>
           </div>
           <div class="exp-role">Scrum Master · Gestor de Proyectos · Consultor · Medellín, Colombia</div>
           <ul class="exp-bullets">
@@ -521,7 +527,7 @@
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-company">Smurfit Kappa Cartón de Colombia</div>
-            <div class="exp-period">Ene 2016 – Jul 2016</div>
+            <div class="exp-period">Jun 2016 – Dic 2016</div>
           </div>
           <div class="exp-role">Mantenimiento de Planta · Medellín, Colombia</div>
           <ul class="exp-bullets">
@@ -535,7 +541,7 @@
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-company">IAC — Ingeniería Asistida por Computador</div>
-            <div class="exp-period">Oct 2014 – Ago 2015</div>
+            <div class="exp-period">Oct 2015 – Jun 2016</div>
           </div>
           <div class="exp-role">Soporte de Aplicaciones · Medellín, Colombia</div>
           <ul class="exp-bullets">
@@ -577,7 +583,7 @@
       <div class="side-sec">
         <div class="avail-box">
           <div class="avail-status">Disponible ahora</div>
-          <div class="avail-text">Inicio en<br>30 días</div>
+          <div class="avail-text">Inicio en<br>máx. 7 días</div>
           <div class="avail-modes">Remoto · Híbrido · Presencial<br>LATAM · Inglés B2</div>
         </div>
       </div>
