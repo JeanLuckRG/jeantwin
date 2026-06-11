@@ -3,7 +3,7 @@
 const { GoogleGenAI } = require('@google/genai');
 const { JEAN_SYSTEM_PROMPT, getFallbackResponse } = require('../config/assistant');
 
-const MODEL = 'gemini-flash-latest';
+const MODEL = 'gemini-2.5-flash-lite';
 
 // Basic in-memory rate limiting per IP
 // Resets on cold start — sufficient for personal-site traffic
