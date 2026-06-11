@@ -95,9 +95,10 @@ module.exports = async function handler(req, res) {
       contents: buildContents(history, message),
       config: {
         systemInstruction: JEAN_SYSTEM_PROMPT,
-        maxOutputTokens: 1100,
+        maxOutputTokens: 800,
         temperature: 0.7,
         topP: 0.85,
+        thinkingConfig: { thinkingBudget: 0 },
       }
     });
 
