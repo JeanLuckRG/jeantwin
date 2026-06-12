@@ -16,7 +16,7 @@ PROPUESTA DE VALOR:
 "Ayudo organizaciones y emprendedores a pasar del caos operativo hacia sistemas claros, ejecutables y rentables."
 
 PERFIL EJECUTIVO:
-Jean Luck Ruiz Granda es consultor operativo, Fractional Leader e integrador de inteligencia artificial con 11 años de experiencia en liderazgo operativo y transformación organizacional. Ubicado en Medellín, Colombia, trabaja con clientes en LATAM. Ha dirigido 105 profesionales de manera directa, liderado operaciones en 6 países y construido desde cero una vertical de servicios en consultoría tecnológica.
+Jean Luck Ruiz Granda es consultor operativo, Fractional Leader e integrador de inteligencia artificial con 10+ años de experiencia en liderazgo operativo y transformación organizacional. Ubicado en Medellín, Colombia, trabaja con clientes en LATAM. Ha dirigido 105 profesionales de manera directa, liderado operaciones en 6 países y construido desde cero una vertical de servicios en consultoría tecnológica.
 
 Combina visión ejecutiva con capacidad de ejecución directa — entiende tanto la sala de juntas como la trinchera operativa. No vende teoría: entrega resultados sostenidos.
 
@@ -28,7 +28,7 @@ TRAYECTORIA PROFESIONAL:
 - Sofka Technologies (sept 2020 – abr 2026): construcción desde cero de la vertical de servicios — diseño del modelo de negocio, estructuración del CoE (Centro de Excelencia), onboarding y dirección simultánea de 105 líderes en 6 países de LATAM
 
 MÉTRICAS REALES:
-- 11+ años de experiencia profesional
+- 10+ años de experiencia profesional
 - 8+ años liderando equipos y operaciones
 - 105 profesionales bajo dirección directa (máximo simultáneo)
 - 6 países de LATAM con operaciones activas
@@ -129,7 +129,7 @@ Tono: más cálido, directo, conversacional
 MODO 3 — EMPLEADOR / RECLUTADOR
 Activa cuando: mencionan cargo, empresa contratante, oportunidad laboral, contrato, "conocer el perfil"
 Objetivo: explicar experiencia, fortalezas, disponibilidad
-Énfasis: 11 años de experiencia, 105 líderes dirigidos, 6 países LATAM, inglés B2, inicio en máximo 7 días, disponible para contrato parcial o liderazgo temporal
+Énfasis: 10+ años de experiencia, 105 líderes dirigidos, 6 países LATAM, inglés B2, inicio en máximo 7 días, disponible para contrato parcial o liderazgo temporal
 
 MODO 4 — INTRODUCCIÓN GENERAL
 Para visitantes que no se identifican claramente
@@ -221,7 +221,7 @@ const FALLBACK_KB = [
     id: 'experiencia',
     kw: ['experiencia', 'trayectoria', 'logro', 'historial', 'carrera', 'background', 'trabajó', 'años', 'perfil', 'cv', 'curriculum', 'hoja de vida', 'sofka', 'smurfit', 'avianca'],
     rs: [
-      `Jean tiene 11 años de experiencia, con 8+ en liderazgo de operaciones.\n\nMétricas clave:\n→ 105 profesionales bajo dirección directa (simultáneo)\n→ Operaciones activas en 6 países de LATAM\n→ Margen operativo >30% sostenido 3 años en sector financiero\n→ Inglés B2 · MCER\n\nHa construido desde cero la vertical de servicios y CoE en Sofka Technologies. ¿Qué parte de su trayectoria te interesa?`,
+      `Jean tiene 10+ años de experiencia, con 8+ en liderazgo de operaciones.\n\nMétricas clave:\n→ 105 profesionales bajo dirección directa (simultáneo)\n→ Operaciones activas en 6 países de LATAM\n→ Margen operativo >30% sostenido 3 años en sector financiero\n→ Inglés B2 · MCER\n\nHa construido desde cero la vertical de servicios y CoE en Sofka Technologies. ¿Qué parte de su trayectoria te interesa?`,
       `Trayectoria de Jean:\n\n2015–2016 → IAC — primeros pasos en operaciones y procesos\n2016 → Smurfit Kappa — gestión industrial\n2017 → OneLink BPO — operaciones de servicio de alto volumen\n2017–2020 → Tech and Solve — consultoría operativa y PMO\n2020–2026 → Sofka Technologies — construcción del CoE y vertical de servicios (105 líderes, 6 países)\n\nActualmente disponible como consultor independiente. ¿Buscas algo específico en su historial?`
     ]
   },
@@ -237,7 +237,7 @@ const FALLBACK_KB = [
     id: 'reclutadores',
     kw: ['reclutador', 'recruiter', 'vacante', 'empleo', 'contrato laboral', 'cargo', 'posicion', 'posición', 'oportunidad laboral', 'candidato', 'hire', 'hiring', 'vinculación', 'vinculacion', 'headhunter', 'busca trabajo', 'busco trabajo'],
     rs: [
-      `Perfil ejecutivo de Jean para reclutadores:\n\n→ 11 años en liderazgo operativo y consultoría\n→ Roles típicos: COO, Head of Operations, Chief of Staff, PMO Lead\n→ 105 profesionales bajo dirección directa (máximo simultáneo)\n→ Operaciones en 6 países LATAM\n→ Inglés B2 · MCER\n→ Inicio disponible en 30 días\n→ Modalidades: remoto, híbrido o presencial\n\nContacto directo:\n✉️ injeanluck@gmail.com\n🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162`,
+      `Perfil ejecutivo de Jean para reclutadores:\n\n→ 10+ años en liderazgo operativo y consultoría\n→ Roles típicos: COO, Head of Operations, Chief of Staff, PMO Lead\n→ 105 profesionales bajo dirección directa (máximo simultáneo)\n→ Operaciones en 6 países LATAM\n→ Inglés B2 · MCER\n→ Inicio disponible en máximo 7 días\n→ Modalidades: remoto, híbrido o presencial\n\nContacto directo:\n✉️ injeanluck@gmail.com\n🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162`,
       `Jean está abierto a oportunidades de liderazgo ejecutivo:\n\nPerfil: COO / Head of Operations / Chief of Staff / PMO Director\nSectores: cualquier industria con operaciones complejas o equipos distribuidos\nExperiencia: financiero, asegurador, tecnología, comercial — LATAM\nFortalezas: estructura operativa, gobierno de proyectos, IA aplicada, liderazgo multinivel\n\nPreferencia: roles con impacto real y autonomía de ejecución.\n→ Agendar conversación: https://calendar.app.google/mNCvbC9qWUPPNVBu5`
     ]
   },
@@ -297,7 +297,7 @@ const FALLBACK_KB = [
     id: 'vision',
     kw: ['visión', 'vision', 'propuesta de valor', 'filosofía', 'filosofia', 'enfoque', 'diferencial', 'quién es jean', 'quien es jean', 'qué lo diferencia', 'que lo diferencia'],
     rs: [
-      `La visión de Jean es clara:\n\n"Ayudo organizaciones y emprendedores a pasar del caos operativo hacia sistemas claros, ejecutables y rentables."\n\nCombina 11 años de experiencia real en liderazgo operativo con el uso estratégico de IA. No vende teoría — busca impacto tangible. Cree en empresas más inteligentes, ligeras y humanas.`
+      `La visión de Jean es clara:\n\n"Ayudo organizaciones y emprendedores a pasar del caos operativo hacia sistemas claros, ejecutables y rentables."\n\nCombina 10+ años de experiencia real en liderazgo operativo con el uso estratégico de IA. No vende teoría — busca impacto tangible. Cree en empresas más inteligentes, ligeras y humanas.`
     ]
   }
 ];
@@ -315,7 +315,7 @@ function getFallbackResponse(message) {
     }
   }
   const defaults = [
-    `Soy Jean Twin, el asistente digital de Jean Luck Ruiz Granda.\n\nJean es consultor operativo, Fractional Leader e integrador de IA con 11 años de experiencia en 6 países de LATAM.\n\nPuedes preguntarme sobre sus servicios, experiencia, disponibilidad o casos. ¿Por dónde empezamos?`,
+    `Soy Jean Twin, el asistente digital de Jean Luck Ruiz Granda.\n\nJean es consultor operativo, Fractional Leader e integrador de IA con 10+ años de experiencia en 6 países de LATAM.\n\nPuedes preguntarme sobre sus servicios, experiencia, disponibilidad o casos. ¿Por dónde empezamos?`,
     `Hola, soy Jean Twin — el representante digital de Jean Luck.\n\nPuedo contarte sobre:\n→ Servicios y especialidades\n→ Experiencia y trayectoria\n→ Disponibilidad y modalidades\n→ Cómo contactarlo directamente\n\n¿Qué quieres saber?`
   ];
   return defaults[Math.floor(Math.random() * defaults.length)];
