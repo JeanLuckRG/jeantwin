@@ -1,6 +1,6 @@
-# Jean Twin V1 — Sitio profesional de Jean Luck Ruiz Granda
+# Jean Twin — Sitio profesional de Jean Luck Ruiz Granda
 
-Sitio profesional completo con asistente IA integrado.  
+Sitio profesional de **Jean Luck Ruiz Granda — AI Enablement & Transformation Leader**, con asistente IA integrado.  
 **Frontend:** HTML + CSS + Vanilla JS  
 **Backend:** Vercel Serverless Function → Gemini API  
 **Deploy target:** Vercel (free tier)

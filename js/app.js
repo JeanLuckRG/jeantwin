@@ -193,6 +193,58 @@ chatInput.addEventListener('keydown', e => {
   }
 });
 
+/* ── JEAN TWIN: OPEN + HERO LIVE-ASK + FLOATING LAUNCHER ─────── */
+const jeantwinSection = document.getElementById('jeantwin');
+
+// Scroll to the chat, optionally seed a question and fire it.
+function openJeanTwin(seedText) {
+  if (jeantwinSection) {
+    jeantwinSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  const text = (seedText || '').trim();
+  if (text) {
+    chatInput.value = text;
+    // Wait for the smooth scroll to settle before sending.
+    setTimeout(sendMessage, 600);
+  } else {
+    setTimeout(() => chatInput.focus(), 500);
+  }
+}
+window.openJeanTwin = openJeanTwin;
+
+// Hero live-ask: type a question at the top, conversation starts below.
+window.askFromHero = function(e) {
+  e.preventDefault();
+  const heroInput = document.getElementById('hero-ask-input');
+  if (!heroInput) return;
+  const text = heroInput.value.trim();
+  if (!text) { openJeanTwin(); return; }
+  heroInput.value = '';
+  openJeanTwin(text);
+};
+
+// Floating launcher: visible whenever neither the hero (with its own ask box)
+// nor the chat section itself is on screen — so it's always reachable in between.
+const jtFab = document.getElementById('jt-fab');
+if (jtFab) {
+  jtFab.addEventListener('click', () => openJeanTwin());
+  const heroEl = document.getElementById('inicio');
+  let heroVisible = true;
+  let chatVisible = false;
+  const updateFab = () => jtFab.classList.toggle('show', !heroVisible && !chatVisible);
+
+  if ('IntersectionObserver' in window && heroEl) {
+    new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; updateFab(); },
+      { threshold: 0.15 }).observe(heroEl);
+    if (jeantwinSection) {
+      new IntersectionObserver(([e]) => { chatVisible = e.isIntersecting; updateFab(); },
+        { threshold: 0.25 }).observe(jeantwinSection);
+    }
+  } else {
+    jtFab.classList.add('show');
+  }
+}
+
 /* ── CONTACT FORM ────────────────────────────────────────────── */
 const FORMSPREE_URL = 'https://formspree.io/f/mjgjlrwz';
 
