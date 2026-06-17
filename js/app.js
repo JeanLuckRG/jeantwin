@@ -16,12 +16,13 @@ mobileMenu.setAttribute('aria-modal', 'true');
 mobileMenu.setAttribute('aria-label', 'Menú de navegación');
 mobileMenu.innerHTML = `
   <button class="nav-close" id="nav-close" aria-label="Cerrar menú">✕</button>
-  <a href="#sobre"      onclick="closeMobileMenu()">Visión</a>
-  <a href="#servicios"  onclick="closeMobileMenu()">Servicios</a>
-  <a href="#perfil"     onclick="closeMobileMenu()">Perfil</a>
-  <a href="#casos"      onclick="closeMobileMenu()">Casos</a>
-  <a href="#jeantwin"   onclick="closeMobileMenu()">Jean Twin</a>
-  <a href="#contacto"   onclick="closeMobileMenu()" class="mobile-cta">Hablemos</a>
+  <a href="#servicios"    onclick="closeMobileMenu()">Servicios</a>
+  <a href="#casos"        onclick="closeMobileMenu()">Casos</a>
+  <a href="#perfil"       onclick="closeMobileMenu()">Perfil</a>
+  <a href="#reclutadores" onclick="closeMobileMenu()">Reclutadores</a>
+  <a href="#jeantwin"     onclick="closeMobileMenu()">Jean Twin</a>
+  <a href="/assets/cv/Jean_Luck_Ruiz_Granda_CV.html" target="_blank" rel="noopener" onclick="closeMobileMenu()" class="mobile-cv">CV Ejecutivo</a>
+  <a href="#contacto"     onclick="closeMobileMenu()" class="mobile-cta">Hablemos</a>
 `;
 document.body.appendChild(mobileMenu);
 
