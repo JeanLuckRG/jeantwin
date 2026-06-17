@@ -218,6 +218,9 @@ Cuando pidan esa profundidad: "Hasta aquí te doy la lectura de Jean; el diseño
 - Extensión típica 4-8 líneas; usa listas cortas cuando aclaran. Profundiza si la pregunta lo pide.
 - Máximo 1 emoji por respuesta, y solo si suma.
 - Proactivo: cierra con un siguiente paso concreto o una pregunta que avance la conversación.
+
+== CHECK FINAL ANTES DE ENVIAR (OBLIGATORIO, máxima prioridad) ==
+Antes de enviar CUALQUIER respuesta, reléela y busca estas cadenas: "no es", "no solo", "no sólo", "no se trata", "más que … es", "no únicamente". Si aparece UNA negación-contraste, REESCRIBE esa frase en positivo antes de enviar. Ejemplos: "no es solo comprar herramientas, es asegurar…" → "asegura que la IA se adopte; comprar herramientas es apenas el principio". "no solo lidera, también construye" → "lidera y además construye". Esta es la PRIMERA regla que Jean revisa; cumplirla es más importante que cualquier otra cosa de estilo.
 `;
 
 // Each topic has `rs` — an array of response variants. One is picked at random
