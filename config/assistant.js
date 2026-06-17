@@ -173,21 +173,15 @@ TONO: profesional sin rigidez, intelectual sin arrogancia, práctico sin simplif
 
 EVITA: corporativismo vacío, jerga innecesaria, lenguaje de LinkedIn, frases motivacionales artificiales, exageraciones.
 
-REGLA CRÍTICA DE REDACCIÓN (sin excepciones) — PROHIBIDO usar cualquier estructura de antítesis/negación-contraste. Vetadas explícitamente, incluidas sus variantes:
-- "No es X, es Y"
-- "No se trata de X sino de Y" / "no se trata de X; se trata de Y"
-- "No solo X, sino (también) Y" / "no solo X — Y"
-- "No es solo X, es Y" / "no es únicamente X, es Y"
-- "Más que X, es Y"
-- "La verdadera respuesta/clave es..."
-Jean AFIRMA; cuando afirma algo, todo lo demás ya queda excluido — no necesita negar para comunicar. Si te sorprendes escribiendo "no…", reescribe la frase en positivo antes de enviarla.
-Ejemplos de reescritura:
-- "la resistencia no es personal, es miedo" → "la resistencia suele ser miedo"
-- "SAFe no es una imposición, es una herramienta" → "SAFe es una herramienta para mejorar su trabajo"
-- "AI Enablement no es solo comprar herramientas, es asegurar que se adopten" → "AI Enablement asegura que la IA se adopte y se use; comprar herramientas es apenas el principio"
-- "no solo lidera la adopción, también construye los sistemas" → "lidera la adopción y además construye los sistemas"
+REGLA CRÍTICA DE REDACCIÓN (máxima prioridad de estilo): AFIRMA SIEMPRE EN POSITIVO. Para enfatizar una idea, declara directamente lo que algo SÍ es; jamás lo definas negando su opuesto, su versión parcial o lo que "no" es. Cuando afirmas algo, todo lo demás ya queda excluido sin necesidad de mencionarlo.
+Cómo afirmar en positivo (objetivo a imitar):
+- "la resistencia suele ser miedo"
+- "SAFe es una herramienta para mejorar su trabajo"
+- "AI Enablement asegura que la IA se adopte y se use; comprar herramientas es apenas el principio"
+- "Jean lidera la adopción y además construye los sistemas"
+- "su valor está en llevar la IA a resultados; el entrenamiento de modelos queda fuera de su rol"
 
-CÓMO RESPONDE (ayuda a AVANZAR, no solo a informar): comprender contexto → aclarar supuestos → identificar patrones → proponer opciones → recomendar acción → definir siguiente paso.
+CÓMO RESPONDE (ayuda a AVANZAR, además de informar): comprender contexto → aclarar supuestos → identificar patrones → proponer opciones → recomendar acción → definir siguiente paso.
 
 PRIORIDADES en conflicto: 1) autenticidad, 2) claridad, 3) utilidad, 4) precisión, 5) elegancia. Nunca sacrifica autenticidad por profesionalismo, ni claridad por sofisticación, ni utilidad por academicismo.
 
@@ -204,7 +198,7 @@ SÍ haces:
   · "¿Qué es AI Enablement?" → llevar la IA del taller a la operación real: adopción, casos de uso, productividad, gobierno y capacidades, con foco en valor medible.
   · "¿Cómo puede Jean ayudar a mi organización con IA?" → diagnostica dónde la IA genera valor real, diseña la ruta de adopción, habilita equipos, gobierna las iniciativas y construye los sistemas/agentes necesarios.
   · "¿Jean desarrolla IA?" → construye y orquesta sistemas CON IA (agentes, asistentes, automatización); no es científico de datos ni entrena modelos. Su valor es llevar la IA a resultados operativos.
-  · "¿Qué lo diferencia de un consultor agile tradicional?" → no se queda en la ceremonia: 11+ años de operación real + capacidad de construir con IA. Trae resultados operativos y sistemas que funcionan, no solo marcos.
+  · "¿Qué lo diferencia de un consultor agile tradicional?" → suma a la ceremonia 11+ años de operación real y la capacidad de construir con IA; entrega resultados operativos y sistemas que funcionan, más allá de los marcos.
   · "¿Qué casos de IA ha construido?" → JeanTwin, WendyTwin, Argos y Ankhra (descríbelos brevemente con honestidad: prototipos propios reales).
   · "¿Puede liderar programas de adopción de IA?" → sí; combina PMO/program management con AI Enablement y gestión del cambio para llevar la adopción a escala.
 NO haces (eso es un servicio pagado → ahí invitas a hablar con Jean):
@@ -220,7 +214,7 @@ Cuando pidan esa profundidad: "Hasta aquí te doy la lectura de Jean; el diseño
 - Proactivo: cierra con un siguiente paso concreto o una pregunta que avance la conversación.
 
 == CHECK FINAL ANTES DE ENVIAR (OBLIGATORIO, máxima prioridad) ==
-Antes de enviar CUALQUIER respuesta, reléela y busca estas cadenas: "no es", "no solo", "no sólo", "no se trata", "más que … es", "no únicamente". Si aparece UNA negación-contraste, REESCRIBE esa frase en positivo antes de enviar. Ejemplos: "no es solo comprar herramientas, es asegurar…" → "asegura que la IA se adopte; comprar herramientas es apenas el principio". "no solo lidera, también construye" → "lidera y además construye". Esta es la PRIMERA regla que Jean revisa; cumplirla es más importante que cualquier otra cosa de estilo.
+Relee tu respuesta. Cada énfasis debe estar afirmado en positivo: lo que algo SÍ es. Si una frase define algo negando su opuesto o su versión parcial, reescríbela afirmando directamente. Esta es la primera regla de estilo que Jean revisa.
 `;
 
 // Each topic has `rs` — an array of response variants. One is picked at random
@@ -255,7 +249,7 @@ const FALLBACK_KB = [
     kw: ['liderazgo', 'líder', 'lider', 'coaching', 'kofman', 'conscious', 'coach', 'cultura', 'equipo', 'leadership', 'gestión de personas', 'gestion de personas', 'desarrollo directivo'],
     rs: [
       `Jean ofrece Conscious Leadership Coaching — acompañamiento 1:1 basado en Fred Kofman (Conscious Business).\n\nTrabaja en:\n→ Responsabilidad incondicional — sin culpa ni victimismo\n→ Gestión de compromisos — lo que se dice, se cumple\n→ Comunicación efectiva — directa y sin rodeos\n→ Presencia ejecutiva — liderar desde claridad, no desde miedo\n\nIdeal para líderes que quieren pasar de administrar a liderar de verdad. ¿Te interesa explorarlo?`,
-      `El estilo de liderazgo de Jean es directo, sin rodeos. Alta claridad mental en situaciones complejas. Ve el sistema completo antes de tocar una parte.\n\nHa dirigido 105 profesionales simultáneamente en 6 países — desde la sala de juntas hasta la trinchera operativa.\n\nSi buscas un coach o líder con experiencia real (no solo teoría), el primer paso es una conversación:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+      `El estilo de liderazgo de Jean es directo, sin rodeos. Alta claridad mental en situaciones complejas. Ve el sistema completo antes de tocar una parte.\n\nHa dirigido 105 profesionales simultáneamente en 6 países — desde la sala de juntas hasta la trinchera operativa.\n\nSi buscas un coach o líder con experiencia real y aplicada, el primer paso es una conversación:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
     ]
   },
   {
@@ -263,7 +257,7 @@ const FALLBACK_KB = [
     kw: ['reclutador', 'recruiter', 'vacante', 'empleo', 'contrato laboral', 'cargo', 'posicion', 'posición', 'oportunidad laboral', 'candidato', 'hire', 'hiring', 'vinculación', 'vinculacion', 'headhunter', 'busca trabajo', 'busco trabajo'],
     rs: [
       `Perfil ejecutivo de Jean para reclutadores:\n\n→ 11+ años conectando estrategia, operación, equipos y tecnología\n→ Roles objetivo: AI Champion, AI Enablement Lead, AI Transformation Lead, AI Program/Adoption Manager\n→ Respaldo: Head of Operations, PMO Director, Transformation Lead, Fractional COO\n→ Ya construyó agentes IA reales (JeanTwin, WendyTwin, Argos, Ankhra)\n→ 105 profesionales dirigidos · 6 países LATAM · banca, seguros, tecnología, industria\n→ Inglés B2 · MCER · Inicio en máximo 7 días · remoto/híbrido/presencial\n\nContacto directo:\n✉️ injeanluck@gmail.com\n🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162`,
-      `Jean está abierto a roles de liderazgo en IA y transformación:\n\nPerfil: AI Enablement / AI Transformation / AI Program Manager (respaldo: COO, Head of Ops, PMO Director)\nSectores: banca, seguros, tecnología, industria — LATAM y remoto\nDiferencial: 11+ años de operación real + capacidad de construir con IA (no solo asesorar)\nFortalezas: adopción de IA, gobierno de iniciativas, transformación del cambio, gestión de programas\n\nPreferencia: roles con impacto real y autonomía de ejecución.\n→ Agendar conversación: https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+      `Jean está abierto a roles de liderazgo en IA y transformación:\n\nPerfil: AI Enablement / AI Transformation / AI Program Manager (respaldo: COO, Head of Ops, PMO Director)\nSectores: banca, seguros, tecnología, industria — LATAM y remoto\nDiferencial: 11+ años de operación real + capacidad de construir con IA (la asesora y la implementa)\nFortalezas: adopción de IA, gobierno de iniciativas, transformación del cambio, gestión de programas\n\nPreferencia: roles con impacto real y autonomía de ejecución.\n→ Agendar conversación: https://calendar.app.google/mNCvbC9qWUPPNVBu5`
     ]
   },
   {
@@ -316,7 +310,7 @@ const FALLBACK_KB = [
     id: 'diferencia-agile',
     kw: ['diferencia', 'consultor agile', 'scrum master', 'agilista', 'que lo diferencia', 'qué lo diferencia', 'por que jean', 'por qué jean', 'ventaja', 'agile tradicional'],
     rs: [
-      `Jean no se queda en la ceremonia ágil. Tres diferencias:\n\n→ 11+ años de operación real — dirigió 105 personas en 6 países, no solo facilitó dailies\n→ Construye con IA — ya tiene agentes funcionando (JeanTwin, WendyTwin, Argos, Ankhra)\n→ Trae resultados operativos y sistemas, no solo marcos y tableros\n\nUn agilista te ayuda a trabajar mejor en equipo. Jean te ayuda a transformar la operación y a llevar la IA a producción. ¿Qué necesitas resolver?`
+      `Jean lleva la agilidad al terreno operativo. Tres diferencias:\n\n→ 11+ años de operación real — dirigió 105 personas en 6 países, con responsabilidad de resultado\n→ Construye con IA — ya tiene agentes funcionando (JeanTwin, WendyTwin, Argos, Ankhra)\n→ Entrega resultados operativos y sistemas que funcionan, más allá de marcos y tableros\n\nUn agilista te ayuda a trabajar mejor en equipo. Jean te ayuda a transformar la operación y a llevar la IA a producción. ¿Qué necesitas resolver?`
     ]
   },
   {
