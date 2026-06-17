@@ -355,4 +355,39 @@ function getFallbackResponse(message) {
   return defaults[Math.floor(Math.random() * defaults.length)];
 }
 
-module.exports = { JEAN_SYSTEM_PROMPT, getFallbackResponse };
+// Deterministic safety net for Jean's anti-antithesis voice rule.
+// Gemini Flash-Lite reliably produces "no solo X, sino Y" despite prompt rules,
+// so we rewrite the construction into an affirmative form after generation.
+// Conservative by design: only rewrites recognized frames; leaves anything
+// ambiguous untouched (never risks breaking grammar). Legit "no" stays intact.
+function sanitizeVoice(t) {
+  if (!t || typeof t !== 'string') return t;
+  let s = t;
+
+  // Normalize "únicamente" variants into the "solo" frames first.
+  s = s.replace(/\bno es [uú]nicamente\b/gi, 'no es solo');
+  s = s.replace(/\bno [uú]nicamente\b/gi, 'no solo');
+
+  // "no es solo X, sino [que/también] Y" -> "es Y, más allá de X"
+  s = s.replace(/\bno es s[oó]lo\s+([^.;\n!?]+?),?\s+sino(?: que)?(?: tambi[eé]n)?\s+([^.;\n!?]+)/gi, 'es $2, más allá de $1');
+  // "no es solo X, es Y" -> "va más allá de X: es Y"
+  s = s.replace(/\bno es s[oó]lo\s+([^.;\n!?]+?),\s+es\s+/gi, 'va más allá de $1: es ');
+
+  // "no solo X, sino que también Y" / "sino también Y" -> "X, y también Y"
+  s = s.replace(/\bno s[oó]lo\s+([^.;\n!?]+?),?\s+sino que tambi[eé]n\s+/gi, '$1, y también ');
+  s = s.replace(/\bno s[oó]lo\s+([^.;\n!?]+?),?\s+sino tambi[eé]n\s+/gi, '$1, y también ');
+  // "no solo X, sino que Y" -> "X, y además Y"
+  s = s.replace(/\bno s[oó]lo\s+([^.;\n!?]+?),?\s+sino que\s+/gi, '$1, y además ');
+  // "no solo X, sino Y" -> "X, y Y"
+  s = s.replace(/\bno s[oó]lo\s+([^.;\n!?]+?),?\s+sino\s+/gi, '$1, y ');
+  // "no solo X, también Y" (comma + también, no sino) -> "X, y también Y"
+  s = s.replace(/\bno s[oó]lo\s+([^.;\n!?]+?),\s+tambi[eé]n\s+/gi, '$1, y también ');
+  // trailing ", no solo Y" -> ", más allá de Y"
+  s = s.replace(/,\s+no s[oó]lo\s+/gi, ', más allá de ');
+
+  // Recapitalize sentence starts our edits may have lowered.
+  s = s.replace(/(^|[.!?]\s+)([a-záéíóúñ])/g, (m, p, c) => p + c.toUpperCase());
+  return s;
+}
+
+module.exports = { JEAN_SYSTEM_PROMPT, getFallbackResponse, sanitizeVoice };

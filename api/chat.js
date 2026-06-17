@@ -1,7 +1,7 @@
 'use strict';
 
 const { GoogleGenAI } = require('@google/genai');
-const { JEAN_SYSTEM_PROMPT, getFallbackResponse } = require('../config/assistant');
+const { JEAN_SYSTEM_PROMPT, getFallbackResponse, sanitizeVoice } = require('../config/assistant');
 
 const MODEL = 'gemini-2.5-flash-lite';
 
@@ -113,7 +113,7 @@ module.exports = async function handler(req, res) {
     }
 
     console.log('[JeanTwin] Gemini responded OK');
-    return res.status(200).json({ response, mode: 'gemini' });
+    return res.status(200).json({ response: sanitizeVoice(response), mode: 'gemini' });
 
   } catch (err) {
     const httpStatus = err?.status ?? err?.httpStatus ?? 0;
