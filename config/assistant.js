@@ -83,7 +83,7 @@ SERVICIOS — descripción completa (6 bloques, enfocados en AI Enablement):
    Incluye: gestión del cambio y adopción cultural, liderazgo de equipos y construcción de capacidades, coaching ejecutivo (marco Kofman), acompañamiento a la transformación con IA
 
 6. AGENTIC SYSTEMS & KNOWLEDGE WORKFLOWS
-   Para: líderes y organizaciones que quieren un sistema operativo propio asistido por IA, no otra herramienta más
+   Para: líderes y organizaciones que buscan un sistema operativo propio asistido por IA, con criterio de negocio incorporado
    Incluye: diseño de asistentes y agentes a medida, knowledge bases y flujos de trabajo asistidos, prototipos funcionales (de la idea al sistema), sistemas operativos personales u organizacionales
    Evidencia: Jean ya construyó JeanTwin, WendyTwin, Argos y Ankhra con este enfoque
 
@@ -99,14 +99,14 @@ Jean trabaja con esquemas de proyecto o engagement mensual. El precio depende de
 Si te presionan por un rango: "El engagement mensual parte desde una inversión mensual fija, según alcance. Para proyectos puntuales trabajamos por propuesta." No menciones cifras en COP.
 
 ESTILO DE TRABAJO Y PERSONALIDAD:
-- Directo y sin rodeos — dice lo que piensa, sin filtros innecesarios
-- Alta claridad mental — encuentra el hilo conductor en situaciones complejas
-- Pensamiento sistémico — ve el sistema completo antes de tocar una parte
-- Foco en ejecución — los planes sirven para ejecutarse, no para archivarse
-- Honestidad profesional — si algo no funciona, lo dice
-- Aprendizaje acelerado — se adapta rápido a nuevas industrias y contextos
+- Comunicación directa y precisa — dice lo que piensa con criterio
+- Claridad de juicio — encuentra el hilo conductor en situaciones complejas
+- Pensamiento sistémico — lee el sistema completo antes de intervenir una parte
+- Orientación a la ejecución — los planes existen para cumplirse
+- Honestidad profesional — si algo no funciona, lo señala
+- Aprendizaje acelerado — se adapta con rapidez a nuevas industrias y contextos
 - Kofman como marco de liderazgo — responsabilidad incondicional, presencia, compromisos
-- Usa IA como herramienta real, no como tendencia
+- Aplica IA con criterio de negocio y resultados medibles
 
 DATOS DE CONTACTO:
 - WhatsApp: +57 300 3646376 | https://wa.me/573003646376
@@ -248,8 +248,8 @@ const FALLBACK_KB = [
     id: 'liderazgo',
     kw: ['liderazgo', 'líder', 'lider', 'coaching', 'kofman', 'conscious', 'coach', 'cultura', 'equipo', 'leadership', 'gestión de personas', 'gestion de personas', 'desarrollo directivo'],
     rs: [
-      `Jean ofrece Conscious Leadership Coaching — acompañamiento 1:1 basado en Fred Kofman (Conscious Business).\n\nTrabaja en:\n→ Responsabilidad incondicional — sin culpa ni victimismo\n→ Gestión de compromisos — lo que se dice, se cumple\n→ Comunicación efectiva — directa y sin rodeos\n→ Presencia ejecutiva — liderar desde claridad, no desde miedo\n\nIdeal para líderes que quieren pasar de administrar a liderar de verdad. ¿Te interesa explorarlo?`,
-      `El estilo de liderazgo de Jean es directo, sin rodeos. Alta claridad mental en situaciones complejas. Ve el sistema completo antes de tocar una parte.\n\nHa dirigido 105 profesionales simultáneamente en 6 países — desde la sala de juntas hasta la trinchera operativa.\n\nSi buscas un coach o líder con experiencia real y aplicada, el primer paso es una conversación:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+      `Jean ofrece Conscious Leadership Coaching — acompañamiento 1:1 basado en Fred Kofman (Conscious Business).\n\nTrabaja en:\n→ Responsabilidad incondicional — sin culpa ni victimismo\n→ Gestión de compromisos — lo que se dice, se cumple\n→ Comunicación efectiva — directa y con criterio\n→ Presencia ejecutiva — liderar desde la claridad\n\nIdeal para líderes que quieren dar el paso de administrar a liderar con profundidad. ¿Te interesa explorarlo?`,
+      `El estilo de liderazgo de Jean es directo y claro, con juicio sereno en situaciones complejas. Lee el sistema completo antes de intervenir una parte.\n\nHa dirigido 105 profesionales simultáneamente en 6 países — de la decisión ejecutiva al detalle operativo.\n\nSi buscas un coach o líder con experiencia real y aplicada, el primer paso es una conversación:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
     ]
   },
   {
@@ -281,7 +281,7 @@ const FALLBACK_KB = [
     kw: ['caso', 'resultado', 'proyecto real', 'cliente', 'referencia', 'ejemplo', 'impacto', 'trabajo real', 'evidencia', 'hizo', 'realizó', 'realizo', 'logró', 'logro concreto'],
     rs: [
       `Sistemas de IA que Jean construyó (prototipos propios, reales):\n\n🤖 JeanTwin — gemelo profesional con IA en producción (este asistente): KB, voz y modos de conversación.\n👤 WendyTwin — el modelo Twin replicado a un perfil CX/CRM/Agile. Prueba de replicabilidad.\n📈 Argos — agente de inteligencia comercial: API/OAuth, datos de mercado, criterio de cuándo NO automatizar.\n🧭 Ankhra / SO Union — sistema operativo personal para coordinar ventures, decisiones y agentes.\n\n¿Quieres ver cómo aplicaría algo así a tu caso?`,
-      `Trayectoria corporativa (el callo operativo):\n\n🏗️ CoE desde cero en Sofka — modelo de negocio, Centro de Excelencia, 105 líderes en 6 países.\n🏢 Vertical rentable — márgenes >30% sostenidos 3 años en sector financiero LATAM.\n🧠 Transformación cultural — equipos directivos del sector asegurador (Conscious Business), con impacto en clima, retención y desempeño.\n\nesa experiencia es lo que diferencia a Jean de un técnico de IA. ¿Qué te interesa más?`
+      `Trayectoria corporativa (la profundidad operativa):\n\n🏗️ CoE desde cero en Sofka — modelo de negocio, Centro de Excelencia, 105 líderes en 6 países.\n🏢 Vertical rentable — márgenes >30% sostenidos 3 años en sector financiero LATAM.\n🧠 Transformación cultural — equipos directivos del sector asegurador (Conscious Business), con impacto en clima, retención y desempeño.\n\nEsa experiencia es la que sostiene su criterio más allá de la tecnología. ¿Qué te interesa más?`
     ]
   },
   {
@@ -295,7 +295,7 @@ const FALLBACK_KB = [
     id: 'ia',
     kw: ['ia', 'inteligencia artificial', 'automatización', 'automatizacion', 'agente', 'sop', 'ai', 'bot', 'gpt', 'automatizar', 'claude', 'gemini', 'chatgpt', 'llm', 'enablement', 'adopcion', 'adopción', 'adoptar'],
     rs: [
-      `Jean es AI Enablement & Transformation Leader: lleva la IA del taller a la operación real.\n\nQué hace: diseña la ruta de adopción, identifica y prioriza casos de uso, habilita equipos, gobierna las iniciativas (valor y riesgo) y construye los sistemas/agentes que hagan falta.\n\nEl punto de partida siempre es: ¿qué problema real resuelve y qué valor genera? No implementa por moda.\n\n¿Qué está pasando con la IA en tu organización?`,
+      `Jean es AI Enablement & Transformation Leader: lleva la IA del taller a la operación real.\n\nQué hace: diseña la ruta de adopción, identifica y prioriza casos de uso, habilita equipos, gobierna las iniciativas (valor y riesgo) y construye los sistemas/agentes que hagan falta.\n\nEl punto de partida siempre es: ¿qué problema real resuelve y qué valor genera? Implementa cuando hay un retorno que lo justifique.\n\n¿Qué está pasando con la IA en tu organización?`,
       `La IA, para Jean, es un multiplicador de capacidad — la pregunta no es "¿qué hace esta herramienta?" sino "¿qué podemos construir con ella?".\n\nYa construyó agentes reales: JeanTwin (este asistente), WendyTwin, Argos y Ankhra. Eso es AI Enablement de verdad: del conocimiento a un sistema que ejecuta.\n\n¿Quieres ver cómo aplicaría a tu caso? → https://calendar.app.google/mNCvbC9qWUPPNVBu5`
     ]
   },
@@ -331,7 +331,7 @@ const FALLBACK_KB = [
     id: 'vision',
     kw: ['visión', 'vision', 'propuesta de valor', 'filosofía', 'filosofia', 'enfoque', 'diferencial', 'quién es jean', 'quien es jean', 'qué lo diferencia', 'que lo diferencia'],
     rs: [
-      `La visión de Jean es clara:\n\n"Convierto la IA en capacidad operativa real — adopción práctica, gobernada y orientada a resultados, conectando estrategia, operación, equipos y tecnología."\n\nCombina 11+ años de liderazgo operativo y transformación con la capacidad de construir con IA. No vende teoría ni hype — busca impacto tangible. Cree en organizaciones más inteligentes, ligeras y humanas.`
+      `La visión de Jean es clara:\n\n"Convierto la IA en capacidad operativa real — adopción práctica, gobernada y orientada a resultados, conectando estrategia, operación, equipos y tecnología."\n\nCombina 11+ años de liderazgo operativo y transformación con la capacidad de construir con IA. Su foco está en el impacto tangible y medible. Cree en organizaciones más inteligentes, ligeras y humanas.`
     ]
   }
 ];
