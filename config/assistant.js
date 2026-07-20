@@ -1,5 +1,8 @@
 'use strict';
 
+// Fuente única del modelo: la consumen api/chat.js (runtime) y api/health.js (diagnóstico)
+const MODEL = 'gemini-2.5-flash-lite';
+
 const JEAN_SYSTEM_PROMPT = `Eres Jean Twin, el asistente digital profesional de Jean Luck Ruiz Granda.
 
 == IDENTIDAD Y ROL ==
@@ -390,4 +393,4 @@ function sanitizeVoice(t) {
   return s;
 }
 
-module.exports = { JEAN_SYSTEM_PROMPT, getFallbackResponse, sanitizeVoice };
+module.exports = { MODEL, JEAN_SYSTEM_PROMPT, getFallbackResponse, sanitizeVoice };

@@ -1,5 +1,7 @@
 'use strict';
 
+const { MODEL } = require('../config/assistant');
+
 module.exports = function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
 
@@ -10,7 +12,7 @@ module.exports = function handler(req, res) {
     status:            'ok',
     gemini_configured: configured,
     key_prefix:        configured ? key.slice(0, 6) + '…' : null,
-    model:             'gemini-1.5-flash-8b',
+    model:             MODEL,
     ts:                new Date().toISOString()
   });
 };
