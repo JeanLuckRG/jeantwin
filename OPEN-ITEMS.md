@@ -6,7 +6,10 @@
 > Esta lista es para cuando se retome la búsqueda de empleo / posicionamiento personal.
 
 ## Factuales (decidir antes de publicar)
-- [ ] **Años de experiencia:** el sitio dice "11+" en 7 lugares; el CV dice "10+". Unificar.
+- [x] **Años de experiencia:** RESUELTO 2026-07-20 → **10+** en sitio, Twin y CV.
+      Nota: `8f8af1d` (11-jun) ya había estandarizado a 10+, pero el pivot `2b4edef`
+      (17-jun) lo revirtió a 11+ en los tres artefactos. Si se vuelve a reescribir el
+      copy, verificar que no regrese: `grep -c "11+ años" config/assistant.js index.html`
 - [ ] **Margen >30%:** aparece en hero (línea 77), métrica (103), caso (411/414). Jean confirmó que el logro es real pero la cifra puede no ser precisa. Suavizar a cualitativo ("márgenes sostenibles/saludables") o sustentar con número exacto.
 - [ ] **6 países LATAM:** línea 483 nombra "Colombia, México, Guatemala, Honduras". El CV solo dice "6 países". Confirmar la lista exacta o dejar genérico.
 
