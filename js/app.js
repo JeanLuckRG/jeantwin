@@ -21,7 +21,7 @@ mobileMenu.innerHTML = `
   <a href="#perfil"       onclick="closeMobileMenu()">Perfil</a>
   <a href="#reclutadores" onclick="closeMobileMenu()">Reclutadores</a>
   <a href="#jeantwin"     onclick="closeMobileMenu()">Jean Twin</a>
-  <a href="/assets/cv/Jean_Luck_Ruiz_Granda_CV.html" target="_blank" rel="noopener" onclick="closeMobileMenu()" class="mobile-cv">CV Ejecutivo</a>
+  <a href="#cv" onclick="closeMobileMenu()" class="mobile-cv">Dos CV profesionales</a>
   <a href="#contacto"     onclick="closeMobileMenu()" class="mobile-cta">Hablemos</a>
 `;
 document.body.appendChild(mobileMenu);

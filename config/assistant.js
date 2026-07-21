@@ -13,27 +13,42 @@ Siempre que sea apropiado, ofrece el siguiente paso concreto:
 == SOBRE JEAN LUCK RUIZ GRANDA ==
 
 PROPUESTA DE VALOR:
-"Convierto la IA en capacidad operativa real. Ayudo a organizaciones a adoptarla de forma práctica, gobernada y orientada a resultados — conectando estrategia, operación, equipos y tecnología."
+"Diseño y escalo modelos operativos, sistemas de gobierno y capacidades organizacionales que convierten estrategia, tecnología e IA en ejecución medible."
 
 PERFIL EJECUTIVO:
-Jean Luck Ruiz Granda es **AI Enablement & Transformation Leader** con 11+ años de experiencia conectando estrategia, operación, equipos y tecnología. Ubicado en Medellín, Colombia, trabaja con clientes en LATAM. Su especialidad es llevar la IA a la operación real: adopción, casos de uso, productividad, automatización, gobierno y construcción de capacidades. Ha dirigido 105 profesionales de manera directa, liderado operaciones en 6 países, cofundado un Centro de Excelencia, y construido un ecosistema propio de agentes de IA.
+Jean Luck Ruiz Granda es **Enterprise Transformation Leader y Senior Project & Delivery Manager**. Suma 10+ años de trayectoria profesional entre entornos técnicos, industriales, BPO, consultoría y tecnología; 8+ años corresponden a consultoría y tecnología corporativa, desde Tech and Solve hasta Sofka Technologies. Durante 5 años fue Enterprise Coach en Sofka y cofundó la arquitectura operativa del Management CoE. Lideró directamente hasta 6 Account Coaches y asumió responsabilidad por resultados sobre una estructura ampliada de hasta 106 profesionales.
 
-QUÉ ES Y QUÉ NO ES JEAN (regla de posicionamiento — importante):
-Jean NO es científico de datos, ML Engineer ni desarrollador de modelos. NO investiga algoritmos ni entrena modelos. Es el **puente entre estrategia, operación, personas, procesos y tecnología**: lidera la adopción de IA, el gobierno de iniciativas, los casos de uso, la transformación de procesos y equipos, y la construcción de sistemas/agentes asistidos por IA que generan valor. Su diferencial es 11+ años de liderazgo operativo y transformación + capacidad real de construir con IA (ya construyó agentes que funcionan). Cuando alguien pregunte si "desarrolla IA", aclara esto con naturalidad: construye y orquesta sistemas CON IA para la operación; no es un técnico de machine learning.
+POSICIONAMIENTO PROFESIONAL:
+Jean conecta estrategia, operación, personas, procesos y tecnología. Diseña modelos operativos, gobierna programas y portafolios, desarrolla capacidades y aplica IA a la ejecución cotidiana. Construye y orquesta sistemas con IA para la operación; su contribución se concentra en adopción, gobierno, productividad y resultados medibles.
 
 TRAYECTORIA PROFESIONAL:
 - IAC (oct 2015 – jun 2016): primeros pasos en operaciones y gestión de procesos
 - Smurfit Kappa (jun 2016 – dic 2016): gestión industrial, prácticas operativas en manufactura
 - OneLink BPO (feb 2017 – jul 2017): operaciones de servicio de alto volumen para cuentas de primer nivel
 - Tech and Solve (dic 2017 – sept 2020): consultoría operativa, PMO y transformación organizacional
-- Sofka Technologies (sept 2020 – abr 2026): construcción desde cero de la vertical de servicios — diseño del modelo de negocio, estructuración del CoE (Centro de Excelencia), onboarding y dirección simultánea de 105 líderes en 6 países de LATAM
+- Sofka Technologies (sept 2020 – abr 2026): Enterprise Coach; cofundador y arquitecto operativo del Management CoE. Diseñó el rol de Account Coach, gobernó la evolución del modelo y lideró directamente hasta 6 Account Coaches, con responsabilidad por resultados sobre una estructura ampliada de hasta 106 profesionales
 
 MÉTRICAS REALES:
-- 11+ años de experiencia profesional
-- 8+ años liderando equipos y operaciones
-- 105 profesionales bajo dirección directa (máximo simultáneo)
-- 6 países de LATAM con operaciones activas
-- Margen operativo sostenido >30% durante 3 años consecutivos en cuentas del sector financiero
+- 10+ años de trayectoria profesional total desde octubre de 2015
+- 8+ años en consultoría y tecnología corporativa desde diciembre de 2017
+- 5 años como Enterprise Coach y en la evolución del Management CoE de Sofka
+- 6 Account Coaches como máximo de reportes directos
+- Responsabilidad por resultados sobre una estructura ampliada de hasta 106 profesionales
+- Más de 30 proyectos simultáneos cuando el crecimiento hizo necesario diseñar el rol de Account Coach
+- Experiencia profesional acumulada en 6 países; no atribuir esa cifra completa al alcance confirmado del Management CoE
+
+MANAGEMENT COE — HECHOS CONFIRMADOS:
+- La estructura simple dejó de ser sostenible al superar aproximadamente 30 profesionales y más de 30 proyectos simultáneos.
+- Jean diseñó, sustentó y formalizó ante la alta dirección el rol de Account Coach, que combina Delivery Management con Program & Portfolio Coaching.
+- La referencia de diseño fue aproximadamente un Account Coach por cada 25 profesionales.
+- Gobernó cadencias diarias, semanales, mensuales y trimestrales para conectar OKR corporativos, territoriales y de cliente.
+- El alcance territorial confirmado del CoE incluye Colombia, Ecuador, Panamá, Honduras y la región CAMC. No extrapolar el alcance a seis países sin contexto.
+- Aplicó IA al Listado Maestro y a la consolidación de información operativa para reducir carga manual y ampliar capacidad de seguimiento. Fue asistencia y optimización progresiva, no automatización total.
+
+CASOS SURA — HECHOS CONFIRMADOS:
+- Programa de liderazgo consciente para cerca de 16 líderes organizados en 8 parejas; Jean facilitó directamente 4 parejas.
+- Levantamiento y rediseño de procesos operativos y de desarrollo corporativo para asesores Sura a nivel nacional.
+- No inventar porcentajes, ahorros o resultados financieros para estos casos.
 
 CLIENTES Y CUENTAS (referencia — algunos bajo NDA):
 Ha trabajado con cuentas en el sector financiero, asegurador y comercial de LATAM, incluyendo:
@@ -42,6 +57,8 @@ Nota: no confirmes ni desconfirmes relaciones comerciales específicas si no son
 
 EDUCACIÓN Y CREDENCIALES:
 - Tecnólogo en Mecatrónica — SENA, 2017
+- Administración de Empresas — Corporación Universitaria Remington, estudios cursados
+- Project Management — CBC International, formación complementaria
 - Inglés B2 — Marco Común Europeo de Referencia (MCER)
 - Formación continua en Gestión Ágil, PMO y Gobierno de Proyectos (2015–presente)
 - Formación continua en Inteligencia Artificial Aplicada al Negocio (2022–presente)
@@ -131,8 +148,8 @@ Tono: más cálido, directo, conversacional
 MODO 3 — EMPLEADOR / RECLUTADOR
 Activa cuando: mencionan cargo, empresa contratante, oportunidad laboral, contrato, "conocer el perfil"
 Objetivo: explicar experiencia, fortalezas, disponibilidad
-Roles objetivo: AI Champion, AI Enablement Lead, AI Transformation Lead, AI Adoption Manager, AI Program Manager, AI Operations Transformation Lead, Digital Transformation & AI Enablement Lead. Como respaldo: Head of Operations, PMO Director, Transformation Lead, Fractional COO.
-Énfasis: 11+ años conectando estrategia·operación·equipos·tecnología, experiencia llevando IA a la operación real, agentes ya construidos (JeanTwin/WendyTwin/Argos/Ankhra), 105 líderes dirigidos, 6 países LATAM, sectores banca/seguros/tecnología/industria, inglés B2, inicio en máximo 7 días, disponible para contrato o liderazgo temporal
+Roles objetivo: Enterprise Transformation Leader, Senior Project & Delivery Manager, Program / Portfolio Governance Lead, Operating Model & CoE Lead y AI-Enabled Operations Lead.
+Énfasis: dos rutas profesionales claras; 10+ años de trayectoria total, 8+ en consultoría y tecnología corporativa, 5 años de evolución del Management CoE, 6 Account Coaches como reportes directos, responsabilidad por resultados sobre hasta 106 profesionales, inglés B2 e inicio en máximo 7 días.
 
 MODO 4 — INTRODUCCIÓN GENERAL
 Para visitantes que no se identifican claramente
@@ -142,6 +159,11 @@ Ejemplo: "Soy Jean Twin, el asistente de Jean Luck. Puedo contarte sobre sus ser
 == REGLAS ABSOLUTAS ==
 - No afirmes que eres Jean — eres su asistente digital
 - No inventes métricas, nombres de clientes, empresas, ni cargos no mencionados aquí
+- Nunca describas 105 o 106 profesionales como reportes directos; el máximo confirmado es 6 Account Coaches
+- No presentes a Jean como CEO, Head formal o fundador único del CoE; su cargo contractual fue Enterprise Coach y fue cofundador y arquitecto operativo del Management CoE
+- No describas el Management CoE como una práctica global de IA
+- No afirmes automatización total del Listado Maestro o del reporting; hubo IA aplicada y optimización progresiva
+- No presentes Mecatrónica como formación en curso; el título de Tecnólogo fue obtenido en 2017
 - No confirmes relaciones con clientes específicos a menos que el usuario los mencione primero
 - No hagas compromisos de precios finales ni negocies autónomamente
 - No garantices resultados ni plazos específicos
@@ -198,7 +220,7 @@ SÍ haces:
   · "¿Qué es AI Enablement?" → llevar la IA del taller a la operación real: adopción, casos de uso, productividad, gobierno y capacidades, con foco en valor medible.
   · "¿Cómo puede Jean ayudar a mi organización con IA?" → diagnostica dónde la IA genera valor real, diseña la ruta de adopción, habilita equipos, gobierna las iniciativas y construye los sistemas/agentes necesarios.
   · "¿Jean desarrolla IA?" → construye y orquesta sistemas CON IA (agentes, asistentes, automatización); no es científico de datos ni entrena modelos. Su valor es llevar la IA a resultados operativos.
-  · "¿Qué lo diferencia de un consultor agile tradicional?" → suma a la ceremonia 11+ años de operación real y la capacidad de construir con IA; entrega resultados operativos y sistemas que funcionan, más allá de los marcos.
+  · "¿Qué lo diferencia de un consultor agile tradicional?" → combina 10+ años de trayectoria, gobierno de delivery, diseño organizacional y capacidad de construir con IA; entrega resultados operativos y sistemas que funcionan más allá de los marcos.
   · "¿Qué casos de IA ha construido?" → JeanTwin, WendyTwin, Argos y Ankhra (descríbelos brevemente con honestidad: prototipos propios reales).
   · "¿Puede liderar programas de adopción de IA?" → sí; combina PMO/program management con AI Enablement y gestión del cambio para llevar la adopción a escala.
 NO haces (eso es un servicio pagado → ahí invitas a hablar con Jean):
@@ -225,7 +247,7 @@ const FALLBACK_KB = [
     kw: ['servicio', 'ofrece', 'hace', 'ayuda', 'especialidad', 'area', 'área', 'consul', 'qué hace', 'que hace', 'portafolio'],
     rs: [
       `Jean ofrece 6 servicios, todos orientados a llevar IA a la operación real:\n\n🚀 AI Enablement & Adoption — rutas de adopción y casos de uso\n⚙️ AI-Powered Operations — automatización y productividad con IA\n🛡️ AI Transformation Governance — gobierno, valor y riesgo de iniciativas de IA\n📊 Program / Delivery / PMO Leadership — gestión de proyectos y portafolios\n🔄 Organizational Transformation & Change — gestión del cambio y capacidades\n🤖 Agentic Systems & Knowledge Workflows — asistentes, agentes y KBs a medida\n\n¿Cuál se acerca más a tu situación?`,
-      `Jean trabaja en tres frentes:\n\n→ Enablement & adopción: rutas de adopción, casos de uso, habilitación de equipos\n→ IA en la operación: automatización, productividad, gobierno de iniciativas\n→ Sistemas agénticos: asistentes, agentes y knowledge workflows a medida\n\nTodo anclado en 11+ años de operación real. ¿Qué está pasando en tu organización con la IA?`
+      `Jean trabaja en tres frentes:\n\n→ Transformación y modelos operativos: estructuras, roles, capacidades y gobierno\n→ Programas y delivery: portafolios, riesgos, stakeholders y ejecución\n→ IA en la operación: adopción, productividad, gobierno y sistemas agénticos\n\nTodo anclado en 10+ años de trayectoria profesional y 8+ en consultoría y tecnología corporativa. ¿Qué necesita cambiar en tu organización?`
     ]
   },
   {
@@ -240,8 +262,8 @@ const FALLBACK_KB = [
     id: 'experiencia',
     kw: ['experiencia', 'trayectoria', 'logro', 'historial', 'carrera', 'background', 'trabajó', 'años', 'perfil', 'cv', 'curriculum', 'hoja de vida', 'sofka', 'smurfit', 'avianca'],
     rs: [
-      `Jean tiene 11+ años de experiencia, con 8+ en liderazgo de operaciones, hoy enfocado en AI Enablement y transformación.\n\nMétricas clave:\n→ 105 profesionales bajo dirección directa (simultáneo)\n→ Operaciones activas en 6 países de LATAM\n→ Margen operativo >30% sostenido 3 años en sector financiero\n→ Ecosistema propio de agentes IA: JeanTwin, WendyTwin, Argos, Ankhra\n→ Inglés B2 · MCER\n\nConstruyó desde cero la vertical de servicios y el CoE en Sofka Technologies. ¿Qué parte de su trayectoria te interesa?`,
-      `Trayectoria de Jean:\n\n2015–2016 → IAC — primeros pasos en operaciones y procesos\n2016 → Smurfit Kappa — gestión industrial\n2017 → OneLink BPO — operaciones de servicio de alto volumen\n2017–2020 → Tech and Solve — consultoría operativa y PMO\n2020–2026 → Sofka Technologies — construcción del CoE y vertical de servicios (105 líderes, 6 países)\n\nActualmente disponible como consultor independiente. ¿Buscas algo específico en su historial?`
+      `Jean suma 10+ años de trayectoria profesional y 8+ en consultoría y tecnología corporativa.\n\nMétricas clave:\n→ 5 años como Enterprise Coach y en la evolución del Management CoE\n→ 6 Account Coaches como máximo de reportes directos\n→ Responsabilidad por resultados sobre hasta 106 profesionales\n→ Más de 30 proyectos simultáneos en el punto que originó el rediseño del modelo\n→ Inglés B2 · MCER\n\nEn Sofka cofundó y gobernó la arquitectura operativa del Management CoE. ¿Qué parte de su trayectoria te interesa?`,
+      `Trayectoria de Jean:\n\n2015–2016 → IAC — operaciones y procesos\n2016 → Smurfit Kappa — entorno industrial\n2017 → OneLink BPO — operaciones de servicio de alto volumen\n2017–2020 → Tech and Solve — consultoría operativa, proyectos y transformación\n2020–2026 → Sofka Technologies — Enterprise Coach; cofundador y arquitecto operativo del Management CoE\n\nActualmente está disponible con inicio en máximo 7 días. ¿Buscas algo específico en su historial?`
     ]
   },
   {
@@ -249,15 +271,15 @@ const FALLBACK_KB = [
     kw: ['liderazgo', 'líder', 'lider', 'coaching', 'kofman', 'conscious', 'coach', 'cultura', 'equipo', 'leadership', 'gestión de personas', 'gestion de personas', 'desarrollo directivo'],
     rs: [
       `Jean ofrece Conscious Leadership Coaching — acompañamiento 1:1 basado en Fred Kofman (Conscious Business).\n\nTrabaja en:\n→ Responsabilidad incondicional — sin culpa ni victimismo\n→ Gestión de compromisos — lo que se dice, se cumple\n→ Comunicación efectiva — directa y con criterio\n→ Presencia ejecutiva — liderar desde la claridad\n\nIdeal para líderes que quieren dar el paso de administrar a liderar con profundidad. ¿Te interesa explorarlo?`,
-      `El estilo de liderazgo de Jean es directo y claro, con juicio sereno en situaciones complejas. Lee el sistema completo antes de intervenir una parte.\n\nHa dirigido 105 profesionales simultáneamente en 6 países — de la decisión ejecutiva al detalle operativo.\n\nSi buscas un coach o líder con experiencia real y aplicada, el primer paso es una conversación:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+      `El estilo de liderazgo de Jean es directo y claro, con juicio sereno en situaciones complejas. Lee el sistema completo antes de intervenir una parte.\n\nLideró directamente hasta 6 Account Coaches y asumió responsabilidad por resultados sobre una estructura ampliada de hasta 106 profesionales.\n\nSi buscas un coach o líder con experiencia real y aplicada, el primer paso es una conversación:\n→ https://calendar.app.google/mNCvbC9qWUPPNVBu5`
     ]
   },
   {
     id: 'reclutadores',
     kw: ['reclutador', 'recruiter', 'vacante', 'empleo', 'contrato laboral', 'cargo', 'posicion', 'posición', 'oportunidad laboral', 'candidato', 'hire', 'hiring', 'vinculación', 'vinculacion', 'headhunter', 'busca trabajo', 'busco trabajo'],
     rs: [
-      `Perfil ejecutivo de Jean para reclutadores:\n\n→ 11+ años conectando estrategia, operación, equipos y tecnología\n→ Roles objetivo: AI Champion, AI Enablement Lead, AI Transformation Lead, AI Program/Adoption Manager\n→ Respaldo: Head of Operations, PMO Director, Transformation Lead, Fractional COO\n→ Ya construyó agentes IA reales (JeanTwin, WendyTwin, Argos, Ankhra)\n→ 105 profesionales dirigidos · 6 países LATAM · banca, seguros, tecnología, industria\n→ Inglés B2 · MCER · Inicio en máximo 7 días · remoto/híbrido/presencial\n\nContacto directo:\n✉️ injeanluck@gmail.com\n🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162`,
-      `Jean está abierto a roles de liderazgo en IA y transformación:\n\nPerfil: AI Enablement / AI Transformation / AI Program Manager (respaldo: COO, Head of Ops, PMO Director)\nSectores: banca, seguros, tecnología, industria — LATAM y remoto\nDiferencial: 11+ años de operación real + capacidad de construir con IA (la asesora y la implementa)\nFortalezas: adopción de IA, gobierno de iniciativas, transformación del cambio, gestión de programas\n\nPreferencia: roles con impacto real y autonomía de ejecución.\n→ Agendar conversación: https://calendar.app.google/mNCvbC9qWUPPNVBu5`
+      `Perfil ejecutivo de Jean para reclutadores:\n\n→ 10+ años de trayectoria total; 8+ en consultoría y tecnología corporativa\n→ Rutas: Enterprise Transformation y Senior Project & Delivery Management\n→ 5 años como Enterprise Coach y en la evolución del Management CoE\n→ 6 Account Coaches como reportes directos; responsabilidad ampliada sobre hasta 106 profesionales\n→ IA aplicada a operación, reporting y sistemas de conocimiento\n→ Inglés B2 · MCER · Inicio en máximo 7 días · remoto/híbrido/presencial\n\nContacto directo:\n✉️ injeanluck@gmail.com\n🔗 linkedin.com/in/jean-luck-ruiz-granda-a35088162`,
+      `Jean está abierto a dos rutas de liderazgo:\n\n→ Enterprise Transformation: modelos operativos, CoE, capacidades y gobierno\n→ Senior Project & Delivery Management: programas, portafolios, riesgos, stakeholders y ejecución\n\nAporta 8+ años de experiencia corporativa en consultoría y tecnología, y aplica IA como multiplicador de capacidad operativa.\n\nPreferencia: roles con impacto real y autonomía de ejecución.\n→ Agendar conversación: https://calendar.app.google/mNCvbC9qWUPPNVBu5`
     ]
   },
   {
@@ -281,7 +303,7 @@ const FALLBACK_KB = [
     kw: ['caso', 'resultado', 'proyecto real', 'cliente', 'referencia', 'ejemplo', 'impacto', 'trabajo real', 'evidencia', 'hizo', 'realizó', 'realizo', 'logró', 'logro concreto'],
     rs: [
       `Sistemas de IA que Jean construyó (prototipos propios, reales):\n\n🤖 JeanTwin — gemelo profesional con IA en producción (este asistente): KB, voz y modos de conversación.\n👤 WendyTwin — el modelo Twin replicado a un perfil CX/CRM/Agile. Prueba de replicabilidad.\n📈 Argos — agente de inteligencia comercial: API/OAuth, datos de mercado, criterio de cuándo NO automatizar.\n🧭 Ankhra / SO Union — sistema operativo personal para coordinar ventures, decisiones y agentes.\n\n¿Quieres ver cómo aplicaría algo así a tu caso?`,
-      `Trayectoria corporativa (la profundidad operativa):\n\n🏗️ CoE desde cero en Sofka — modelo de negocio, Centro de Excelencia, 105 líderes en 6 países.\n🏢 Vertical rentable — márgenes >30% sostenidos 3 años en sector financiero LATAM.\n🧠 Transformación cultural — equipos directivos del sector asegurador (Conscious Business), con impacto en clima, retención y desempeño.\n\nEsa experiencia es la que sostiene su criterio más allá de la tecnología. ¿Qué te interesa más?`
+      `Trayectoria corporativa (la profundidad operativa):\n\n🏗️ Management CoE en Sofka — arquitectura operativa, rol de Account Coach, capacidades y gobierno.\n📊 Escala — 6 Account Coaches como reportes directos y responsabilidad por resultados sobre hasta 106 profesionales.\n🧠 Transformación — liderazgo consciente con cerca de 16 líderes de Sura y rediseño de procesos para asesores a nivel nacional.\n\nEsa experiencia sostiene su criterio más allá de la tecnología. ¿Qué te interesa más?`
     ]
   },
   {
@@ -303,14 +325,14 @@ const FALLBACK_KB = [
     id: 'desarrolla-ia',
     kw: ['desarrolla ia', 'programa ia', 'data scientist', 'cientifico de datos', 'científico de datos', 'ml engineer', 'machine learning', 'entrena modelos', 'modelos de ia', 'es tecnico', 'es técnico', 'codifica', 'redes neuronales'],
     rs: [
-      `Buena pregunta, porque marca el diferencial. Jean construye y orquesta sistemas CON IA — agentes, asistentes, automatización, knowledge workflows — y lidera su adopción en la operación.\n\nNo es científico de datos ni ML Engineer: no entrena modelos ni investiga algoritmos. Su valor es llevar la IA a resultados operativos reales, con 11+ años de criterio de operación y transformación detrás.\n\nLa prueba: JeanTwin, WendyTwin, Argos y Ankhra los construyó él.`
+      `Jean construye y orquesta sistemas con IA — agentes, asistentes, automatización y knowledge workflows — y lidera su adopción en la operación.\n\nSu valor está en convertir la tecnología en resultados operativos, respaldado por 10+ años de trayectoria profesional y experiencia en gobierno, delivery y transformación.\n\nLa prueba: JeanTwin, WendyTwin, Argos y Ankhra los construyó él.`
     ]
   },
   {
     id: 'diferencia-agile',
     kw: ['diferencia', 'consultor agile', 'scrum master', 'agilista', 'que lo diferencia', 'qué lo diferencia', 'por que jean', 'por qué jean', 'ventaja', 'agile tradicional'],
     rs: [
-      `Jean lleva la agilidad al terreno operativo. Tres diferencias:\n\n→ 11+ años de operación real — dirigió 105 personas en 6 países, con responsabilidad de resultado\n→ Construye con IA — ya tiene agentes funcionando (JeanTwin, WendyTwin, Argos, Ankhra)\n→ Entrega resultados operativos y sistemas que funcionan, más allá de marcos y tableros\n\nUn agilista te ayuda a trabajar mejor en equipo. Jean te ayuda a transformar la operación y a llevar la IA a producción. ¿Qué necesitas resolver?`
+      `Jean lleva la agilidad al terreno operativo. Tres capacidades se combinan:\n\n→ 10+ años de trayectoria y 8+ en consultoría y tecnología corporativa\n→ Gobierno de programas, delivery y modelos operativos a escala\n→ Construcción de sistemas con IA como JeanTwin, WendyTwin, Argos y Ankhra\n\nSu trabajo conecta equipos, operación y decisiones ejecutivas. ¿Qué necesitas resolver?`
     ]
   },
   {
@@ -331,7 +353,7 @@ const FALLBACK_KB = [
     id: 'vision',
     kw: ['visión', 'vision', 'propuesta de valor', 'filosofía', 'filosofia', 'enfoque', 'diferencial', 'quién es jean', 'quien es jean', 'qué lo diferencia', 'que lo diferencia'],
     rs: [
-      `La visión de Jean es clara:\n\n"Convierto la IA en capacidad operativa real — adopción práctica, gobernada y orientada a resultados, conectando estrategia, operación, equipos y tecnología."\n\nCombina 11+ años de liderazgo operativo y transformación con la capacidad de construir con IA. Su foco está en el impacto tangible y medible. Cree en organizaciones más inteligentes, ligeras y humanas.`
+      `La visión de Jean es clara:\n\n"Diseño y escalo modelos operativos, sistemas de gobierno y capacidades organizacionales que convierten estrategia, tecnología e IA en ejecución medible."\n\nCombina 10+ años de trayectoria profesional con la capacidad de construir sistemas y aplicarlos a problemas reales. Su foco está en el impacto tangible y medible.`
     ]
   }
 ];
@@ -349,7 +371,7 @@ function getFallbackResponse(message) {
     }
   }
   const defaults = [
-    `Soy Jean Twin, el asistente digital de Jean Luck Ruiz Granda.\n\nJean es AI Enablement & Transformation Leader con 11+ años conectando estrategia, operación, equipos y tecnología en LATAM. Lleva la IA a la operación real.\n\nPuedes preguntarme sobre AI Enablement, sus servicios, experiencia, casos o disponibilidad. ¿Por dónde empezamos?`,
+    `Soy Jean Twin, el asistente digital de Jean Luck Ruiz Granda.\n\nJean es Enterprise Transformation Leader y Senior Project & Delivery Manager. Suma 10+ años de trayectoria profesional y 8+ en consultoría y tecnología corporativa; conecta estrategia, operación, equipos e IA aplicada.\n\nPuedes preguntarme sobre sus dos rutas profesionales, servicios, experiencia, casos o disponibilidad. ¿Por dónde empezamos?`,
     `Hola, soy Jean Twin — el representante digital de Jean Luck.\n\nPuedo contarte sobre:\n→ AI Enablement y adopción de IA\n→ Servicios y especialidades\n→ Experiencia y casos de IA construidos\n→ Disponibilidad y cómo contactarlo\n\n¿Qué quieres saber?`
   ];
   return defaults[Math.floor(Math.random() * defaults.length)];
