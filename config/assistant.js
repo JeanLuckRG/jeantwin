@@ -396,6 +396,11 @@ function sanitizeVoice(t) {
   if (!t || typeof t !== 'string') return t;
   let s = t;
 
+  // Keep total professional trajectory distinct from corporate experience.
+  s = s.replace(/\bm[aá]s de (?:10|diez) a[nñ]os de experiencia(?: profesional)?\b/gi, '10+ años de trayectoria profesional total');
+  s = s.replace(/\b10\+\s*a[nñ]os de experiencia(?: profesional)?\b/gi, '10+ años de trayectoria profesional total');
+  s = s.replace(/\b10\+\s*a[nñ]os de trayectoria profesional\b(?! total)/gi, '10+ años de trayectoria profesional total');
+
   // Normalize "únicamente" variants into the "solo" frames first.
   s = s.replace(/\bno es [uú]nicamente\b/gi, 'no es solo');
   s = s.replace(/\bno [uú]nicamente\b/gi, 'no solo');

@@ -16,6 +16,12 @@ const cases = [
   "El plan no funcionó, pero lo ajustamos."
 ];
 
+const experienceCases = [
+  "Jean tiene más de 10 años de experiencia.",
+  "Jean suma 10+ años de experiencia profesional.",
+  "Jean aporta 10+ años de trayectoria profesional."
+];
+
 let hits = 0;
 for (const c of cases) {
   const out = sanitizeVoice(c);
@@ -26,4 +32,17 @@ for (const c of cases) {
   console.log("");
 }
 console.log("Residuals: " + hits + "/" + cases.length);
+
+let experienceFailures = 0;
+for (const c of experienceCases) {
+  const out = sanitizeVoice(c);
+  const valid = out.includes('10+ años de trayectoria profesional total');
+  if (!valid) experienceFailures++;
+  console.log("IN : " + c);
+  console.log("OUT: " + out + (valid ? "" : "   <-- INVALID EXPERIENCE CLAIM"));
+  console.log("");
+}
+console.log("Experience claim failures: " + experienceFailures + "/" + experienceCases.length);
+
+if (hits || experienceFailures) process.exitCode = 1;
 module.exports = { sanitizeVoice };
