@@ -6,6 +6,40 @@ const { MODEL, JEAN_SYSTEM_PROMPT, getFallbackResponse, sanitizeVoice } = requir
 // Basic in-memory rate limiting per IP
 // Resets on cold start — sufficient for personal-site traffic
 const rateLimitStore = new Map();
+const GEMINI_MAX_ATTEMPTS = 3;
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function getHttpStatus(error) {
+  return error?.status ?? error?.httpStatus ?? 0;
+}
+
+function isRetryableGeminiError(error) {
+  const status = getHttpStatus(error);
+  const message = String(error?.message || '').toLowerCase();
+  return [429, 500, 502, 503, 504].includes(status)
+    || message.includes('unavailable')
+    || message.includes('high demand')
+    || message.includes('resource exhausted');
+}
+
+async function generateWithRetry(ai, request) {
+  for (let attempt = 1; attempt <= GEMINI_MAX_ATTEMPTS; attempt++) {
+    try {
+      return await ai.models.generateContent(request);
+    } catch (error) {
+      if (!isRetryableGeminiError(error) || attempt === GEMINI_MAX_ATTEMPTS) {
+        throw error;
+      }
+
+      const delayMs = 400 * (2 ** (attempt - 1));
+      console.warn(`[JeanTwin] Gemini temporarily unavailable; retrying in ${delayMs}ms`);
+      await sleep(delayMs);
+    }
+  }
+}
 
 function checkRateLimit(ip) {
   const now = Date.now();
@@ -83,12 +117,12 @@ module.exports = async function handler(req, res) {
     });
   }
 
-  console.log(`[JeanTwin] Key present (${apiKey.slice(0, 6)}…), calling ${MODEL}`);
+  console.log(`[JeanTwin] Gemini configured; calling ${MODEL}`);
 
   try {
     const ai = new GoogleGenAI({ apiKey });
 
-    const result = await ai.models.generateContent({
+    const result = await generateWithRetry(ai, {
       model: MODEL,
       contents: buildContents(history, message),
       config: {
@@ -114,7 +148,7 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ response: sanitizeVoice(response), mode: 'gemini' });
 
   } catch (err) {
-    const httpStatus = err?.status ?? err?.httpStatus ?? 0;
+    const httpStatus = getHttpStatus(err);
     const errMsg     = String(err?.message || '').toLowerCase();
     const is429      = httpStatus === 429
       || errMsg.includes('quota')
