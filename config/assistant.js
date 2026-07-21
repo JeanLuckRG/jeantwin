@@ -366,6 +366,12 @@ function normalize(str) {
 
 function getFallbackResponse(message) {
   const q = normalize(message);
+
+  // Questions about leadership scale must stay exact even when Gemini is unavailable.
+  if (['reporte directo', 'reportes directos', 'alcance ampliado', 'responsabilidad ampliada', 'cuantas personas', 'cuantos anos'].some(k => q.includes(k))) {
+    return `Jean suma 10+ años de trayectoria profesional total y 8+ años en consultoría y tecnología corporativa. Durante cinco años como Enterprise Coach lideró directamente hasta 6 Account Coaches y asumió responsabilidad por resultados sobre una estructura ampliada de hasta 106 profesionales.`;
+  }
+
   for (const topic of FALLBACK_KB) {
     if (topic.kw.some(k => q.includes(normalize(k)))) {
       const { rs } = topic;
