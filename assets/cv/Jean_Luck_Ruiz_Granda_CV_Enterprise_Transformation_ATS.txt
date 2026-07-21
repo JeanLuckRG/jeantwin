@@ -35,9 +35,9 @@ Enterprise Coach | Cofundador y arquitecto operativo del Management CoE
   operativo, roles, capacidades, evaluaciones, desarrollo profesional y gobierno.
 - Diseno, sustentacion y formalizacion ante la alta direccion del rol de Account Coach,
   combinando Delivery Management con Program & Portfolio Coaching.
-- Implementacion de una sombrilla administrativa para centralizar los frentes de cada
+- Implementacion de una capa de gobierno para integrar los frentes asignados a cada
   profesional, fortalecer su autogestion y mantener hasta 25 profesionales por Account
-  Coach con apoyo del CoE.
+  Coach con respaldo del CoE.
 - Gobierno de mas de 30 frentes de proyecto simultaneos como dimension independiente
   de la amplitud de control.
 - Liderazgo directo de hasta 6 Account Coaches, con responsabilidad por
