@@ -1,9 +1,7 @@
 'use strict';
 
 const { GoogleGenAI } = require('@google/genai');
-const { JEAN_SYSTEM_PROMPT, getFallbackResponse, sanitizeVoice } = require('../config/assistant');
-
-const MODEL = 'gemini-2.5-flash-lite';
+const { MODEL, JEAN_SYSTEM_PROMPT, getFallbackResponse, sanitizeVoice } = require('../config/assistant');
 
 // Basic in-memory rate limiting per IP
 // Resets on cold start — sufficient for personal-site traffic
