@@ -100,7 +100,6 @@
   .sec-block { margin-bottom: 20px; }
 
   .summary-text { font-size: 0.85rem; line-height: 1.62; color: var(--ink-2); }
-  .summary-text strong { color: var(--ink); font-weight: 600; }
 
   /* ── METRICS ── */
   .metrics-strip {
@@ -131,7 +130,7 @@
     margin-bottom: 18px; padding: 9px 0;
     border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
   }
-  .metrics-line b { font-family: 'Sora', sans-serif; color: var(--ink); font-size: 0.92rem; }
+  .metrics-line span { flex: 1 1 150px; line-height: 1.45; }
 
   /* ── COMPETENCY PILLS ── */
   .comp-pills { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -144,7 +143,6 @@
     color: var(--ink-2);
     line-height: 1.25;
   }
-  .comp-pill strong { color: var(--ink); font-weight: 600; }
 
   /* ── EXPERIENCE ── */
   .exp-item { margin-bottom: 16px; }
@@ -162,7 +160,6 @@
     margin-bottom: 3px;
   }
   .exp-bullets li::before { content: '–'; position: absolute; left: 0; color: var(--brass); font-weight: 700; }
-  .exp-bullets li strong { color: var(--ink); }
   .exp-divider { border: none; border-top: 1px solid var(--rule); margin: 14px 0; }
 
   /* ── SIDEBAR ── */
@@ -212,6 +209,7 @@
     .sec-block { margin-bottom: 8px; }
     .metrics-line { margin-bottom: 9px; padding: 6px 0; }
     .exp-item { margin-bottom: 6px; break-inside: avoid; }
+    .continuation-start { break-before: page; padding-top: 10mm; }
     .exp-divider { margin: 8px 0; }
     .side-sec { margin-bottom: 8px; }
     .metric-cell, .side-sec, .comp-pill { break-inside: avoid; }
@@ -304,28 +302,28 @@
       <div class="sec-block">
         <div class="sec-title">Perfil</div>
         <p class="summary-text">
-          <strong>Senior Project &amp; Delivery Manager</strong> con <strong>10+ años de trayectoria profesional total</strong> y <strong>8+ años en consultoría y tecnología corporativa</strong>. Experiencia end-to-end en alcance, cronograma, costos, riesgos, cambios, interesados, gobierno de programas, equipos distribuidos y transformación de procesos. Trayectoria en modelos híbridos Agile + PMBOK y cinco años como Enterprise Coach, conectando delivery, objetivos corporativos y desarrollo de capacidades a través del Management CoE de Sofka Technologies.
+          Senior Project &amp; Delivery Manager con 10+ años de trayectoria profesional total y 8+ años en consultoría y tecnología corporativa. Experiencia en gobierno end-to-end de proyectos y programas: definición de alcance, planificación, cronograma, costos, calidad, riesgos, cambios, interesados, dependencias y niveles de servicio. Aplicación contextual de PMBOK, Scrum, SAFe y modelos híbridos para conectar delivery, objetivos corporativos, SLA/OLA y desarrollo de capacidades.
         </p>
       </div>
 
       <!-- METRICS -->
       <div class="metrics-line">
-        <span><b>8+</b> años en consultoría y tecnología</span>
-        <span><b>30+</b> proyectos simultáneos gobernados</span>
-        <span><b>6</b> reportes directos · <b>106</b> alcance ampliado</span>
+        <span>Portafolio: 30+ frentes de proyecto bajo el modelo de gobierno</span>
+        <span>Amplitud de control: hasta 25 profesionales por Account Coach</span>
+        <span>Liderazgo: 6 Account Coaches directos y alcance matricial de hasta 106 profesionales</span>
       </div>
 
       <!-- COMPETENCIES -->
       <div class="sec-block">
         <div class="sec-title">Competencias de Gestión de Proyectos</div>
         <div class="comp-pills">
-          <span class="comp-pill"><strong>Triple restricción</strong></span>
-          <span class="comp-pill">Gestión de riesgos</span>
-          <span class="comp-pill">Control de cambios</span>
-          <span class="comp-pill">Gestión de interesados</span>
-          <span class="comp-pill">Planificación y seguimiento</span>
-          <span class="comp-pill">Ciclo de vida de entrega</span>
-          <span class="comp-pill">ANS/OLA y documentación</span>
+          <span class="comp-pill">Gobierno de proyectos y programas</span>
+          <span class="comp-pill">Planificación integrada y líneas base</span>
+          <span class="comp-pill">Alcance, cronograma, costos y calidad</span>
+          <span class="comp-pill">Riesgos, cambios e interesados</span>
+          <span class="comp-pill">SLA / OLA y niveles de servicio</span>
+          <span class="comp-pill">Dependencias, KPI y OKR</span>
+          <span class="comp-pill">Modelos híbridos Agile + PMBOK</span>
         </div>
       </div>
 
@@ -340,10 +338,11 @@
           </div>
           <div class="exp-role">Enterprise Coach · Cofundador y arquitecto operativo del Management CoE · Medellín (Remoto)</div>
           <ul class="exp-bullets">
-            <li>Diseño y gobierno de un modelo de delivery que conectó Account Coaches, gerencias de operaciones y Management CoE mediante cadencias diarias, semanales, mensuales y trimestrales.</li>
-            <li>Formalización del rol de <strong>Account Coach</strong>, combinación de Delivery Management y Program &amp; Portfolio Coaching para gobernar más de 30 proyectos simultáneos.</li>
-            <li>Liderazgo directo de hasta <strong>6 Account Coaches</strong> y responsabilidad por resultados sobre una estructura ampliada de hasta <strong>106 profesionales</strong>.</li>
-            <li>Gestión de proyectos de software y transformación para banca y seguros, con seguimiento de alcance, tiempo, riesgos, cambios, interesados y OKR/KPI.</li>
+            <li>Diseño y gobierno de un modelo de delivery para proyectos y programas que conectó Account Coaches, gerencias de operaciones y Management CoE mediante cadencias operativas, tácticas y estratégicas.</li>
+            <li>Formalización del rol de Account Coach como sombrilla administrativa para centralizar los frentes de cada profesional, sostener su autogestión y mantener una amplitud máxima de 25 profesionales por Account Coach, con apoyo del CoE.</li>
+            <li>Liderazgo directo de hasta 6 Account Coaches y responsabilidad por resultados sobre una estructura ampliada de hasta 106 profesionales.</li>
+            <li>Gobierno de más de 30 frentes de proyecto simultáneos dentro del modelo, separando la cantidad de proyectos de la amplitud de control por profesional.</li>
+            <li>Aplicación contextual de PMBOK y marcos ágiles en iniciativas de banca y seguros, con seguimiento de alcance, cronograma, riesgos, cambios, interesados, dependencias, SLA/OLA y KPI/OKR.</li>
             <li>Aplicación de IA al Listado Maestro, reporting y consolidación de información operativa para reducir carga manual y mejorar el seguimiento.</li>
           </ul>
         </div>
@@ -357,20 +356,49 @@
           </div>
           <div class="exp-role">Scrum Master · Agile Coach · Medellín</div>
           <ul class="exp-bullets">
-            <li><strong>Scrum Master</strong> de proyectos de larga duración en banca y sector comercial, con responsabilidad sobre ceremonias, remoción de impedimentos y continuidad del flujo de entrega.</li>
-            <li>Facilitación intensiva de <strong>Inception y Discovery</strong>: alineación de visión, alcance y valor con el negocio al arranque de cada iniciativa.</li>
-            <li>Desarrollo de <strong>autogestión y mejora continua</strong> mediante velocidad, burndown, salud de equipo y gestión de conflictos, con fundamentos de <strong>Conscious Business (Kofman)</strong>.</li>
+            <li>Gestión y facilitación de proyectos de larga duración en banca y sector comercial, con planificación, seguimiento, gestión de impedimentos, riesgos y continuidad del flujo de entrega.</li>
+            <li>Aplicación de Scrum, SAFe y prácticas PMBOK según la naturaleza de cada proyecto o programa, ajustando gobierno, artefactos, cadencias y controles al contexto.</li>
+            <li>Facilitación intensiva de Inception y Discovery para alinear visión, alcance, interesados, dependencias, valor y criterios de aceptación al inicio de cada iniciativa.</li>
+            <li>Seguimiento de compromisos de entrega, indicadores operativos y niveles de servicio, con escalamiento oportuno de desviaciones.</li>
+            <li>Desarrollo de autogestión y mejora continua mediante velocidad, burndown, salud de equipo y gestión de conflictos, con fundamentos de Conscious Business (Kofman).</li>
             <li>Mentoría a otros Scrum Masters y fortalecimiento de la práctica ágil del equipo.</li>
           </ul>
         </div>
 
+        <hr class="exp-divider">
+
+        <div class="early-career continuation-start">
+        <div class="sec-title">Experiencia Operativa y Técnica</div>
+
         <div class="exp-item">
           <div class="exp-header"><div class="exp-company">OneLink BPO</div><div class="exp-period">Feb 2017 – Jul 2017</div></div>
           <div class="exp-role">Operaciones de servicio de alto volumen · Medellín</div>
-          <ul class="exp-bullets"><li>Gestión cotidiana de una operación BPO de alta demanda, con foco en servicio, cumplimiento y coordinación.</li></ul>
+          <ul class="exp-bullets">
+            <li>Gestión cotidiana de una operación BPO de alta demanda, con seguimiento de niveles de servicio, cumplimiento operativo, atención de desviaciones y coordinación entre frentes.</li>
+          </ul>
         </div>
 
-        <p class="summary-text" style="font-size:0.74rem; color:var(--ink-3); margin-top:4px;">Experiencia previa: Smurfit Kappa (jun–dic 2016) · Mantenimiento de Planta &nbsp;|&nbsp; IAC (oct 2015–jun 2016) · Soporte de Aplicaciones CAD.</p>
+        <hr class="exp-divider">
+
+        <div class="exp-item">
+          <div class="exp-header"><div class="exp-company">Smurfit Kappa Cartón de Colombia</div><div class="exp-period">Jun 2016 – Dic 2016</div></div>
+          <div class="exp-role">Mantenimiento de Planta · Medellín</div>
+          <ul class="exp-bullets">
+            <li>Ejecución de mantenimiento preventivo, predictivo y correctivo eléctrico y electrónico para preservar continuidad operacional en planta de manufactura.</li>
+            <li>Diseño y montaje de proyectos de mejora y automatización industrial, desde diagnóstico técnico hasta implementación.</li>
+          </ul>
+        </div>
+
+        <hr class="exp-divider">
+
+        <div class="exp-item">
+          <div class="exp-header"><div class="exp-company">IAC — Ingeniería Asistida por Computador</div><div class="exp-period">Oct 2015 – Jun 2016</div></div>
+          <div class="exp-role">Soporte de Aplicaciones CAD · Medellín</div>
+          <ul class="exp-bullets">
+            <li>Soporte técnico a clientes, diagnóstico y resolución de incidentes de aplicaciones CAD, con trazabilidad de solicitudes y comunicación directa.</li>
+          </ul>
+        </div>
+        </div>
       </div>
 
     </main>
@@ -381,10 +409,12 @@
       <div class="side-sec">
         <div class="side-title">Marcos y Metodologías</div>
         <ul class="comp-list">
-          <li>Híbrido <strong>Agile + PMBOK</strong></li>
-          <li>Scrum · Scrum Master</li>
-          <li>SAFe · Nexus · Less (escalado)</li>
-          <li>Gobierno PMO y metodológico</li>
+          <li>PMBOK · aplicación contextual</li>
+          <li>Ciclos de vida de proyectos y programas</li>
+          <li>Modelos predictivos, ágiles e híbridos</li>
+          <li>Scrum · SAFe · Nexus · LeSS</li>
+          <li>Gobierno PMO y aseguramiento</li>
+          <li>Inception · Discovery · planificación</li>
           <li>Conscious Leadership (Kofman)</li>
         </ul>
       </div>
@@ -431,7 +461,7 @@
         </div>
       </div>
 
-      <div class="side-sec">
+      <div class="side-sec continuation-start">
         <div class="side-title">Contacto</div>
         <div class="contact-item">
           <span class="contact-label">Email</span>
