@@ -39,3 +39,7 @@ out/
 *.pem
 
 .gstack/
+
+# Secretos locales: se ignora todo .env salvo la plantilla versionada
+.env*
+!.env.example
