@@ -1049,20 +1049,6 @@ h1, h2, h3, h4 {
 .chat-info-card li::before { content: '·'; position: absolute; left: 2px; color: var(--brass); }
 .chat-info-card p { font-size: 0.8125rem; color: var(--text-2); line-height: 1.72; }
 
-.chat-fallback-notice {
-  margin: 8px 12px 4px;
-  padding: 7px 12px;
-  border-radius: 2px;
-  border: 1px solid var(--brass-rule);
-  background: var(--brass-dim);
-  font-size: 0.6875rem;
-  color: rgba(184,146,78,0.7);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  line-height: 1.4;
-}
-
 /* ══════════════════════════════════════════════════════════════
    CONTACTO
 ══════════════════════════════════════════════════════════════ */

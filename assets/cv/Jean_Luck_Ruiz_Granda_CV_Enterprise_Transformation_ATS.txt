@@ -8,16 +8,12 @@ Disponibilidad: inicio en maximo 7 dias; puede ser menor segun el reto y el redi
 
 PERFIL PROFESIONAL
 
-Constructor de sistemas con mas de 10 anos de trayectoria profesional entre
-entornos tecnicos, industriales, BPO, consultoria y tecnologia. Acumulo mas de
-8 anos en consultoria y tecnologia corporativa, desde Tech and Solve hasta
-Sofka Technologies, y 5 anos como Enterprise Coach en la evolucion del
-Management CoE de Sofka.
-
-Diseno modelos operativos, sistemas de gobierno y capacidades organizacionales
-que convierten estrategia, tecnologia e IA en ejecucion medible. Mi experiencia
-se proyecta en dos rutas: Enterprise Transformation y Senior Project & Delivery
-Management.
+Lider de transformacion empresarial con mas de 10 anos de trayectoria
+profesional y mas de 8 anos en consultoria y tecnologia corporativa. Experiencia
+demostrable en diseno de modelos operativos, gobierno matricial, desarrollo de
+capacidades, escalamiento organizacional, cambio continuo e IA aplicada a la
+operacion. Cinco anos como Enterprise Coach, cofundador y arquitecto operativo
+del Management CoE de Sofka Technologies.
 
 ESCALA CONFIRMADA
 
@@ -34,29 +30,29 @@ EXPERIENCIA PROFESIONAL
 SOFKA TECHNOLOGIES | Septiembre 2020 - Abril 2026
 Enterprise Coach | Cofundador y arquitecto operativo del Management CoE
 
-- Cofunde y goberne la arquitectura end-to-end del Management CoE: modelo
+- Cofundacion y gobierno de la arquitectura end-to-end del Management CoE: modelo
   operativo, roles, capacidades, evaluaciones, desarrollo profesional y gobierno.
-- Disene, sustente y formalice ante la alta direccion el rol de Account Coach,
+- Diseno, sustentacion y formalizacion ante la alta direccion del rol de Account Coach,
   combinando Delivery Management con Program & Portfolio Coaching.
-- Lidere directamente hasta 6 Account Coaches, con responsabilidad por
+- Liderazgo directo de hasta 6 Account Coaches, con responsabilidad por
   resultados sobre una estructura ampliada de hasta 106 profesionales.
-- Implemente cadencias diarias, semanales, mensuales y trimestrales para alinear
+- Implementacion de cadencias diarias, semanales, mensuales y trimestrales para alinear
   OKR corporativos, territoriales y de cliente.
-- Aplique IA al Listado Maestro y a la consolidacion de informacion operativa
+- Aplicacion de IA al Listado Maestro y a la consolidacion de informacion operativa
   para reducir carga manual y ampliar la capacidad de seguimiento.
-- Facilite liderazgo consciente con cerca de 16 lideres de Sura organizados en
+- Diseno y facilitacion de liderazgo consciente con cerca de 16 lideres de Sura organizados en
   8 parejas; acompane directamente 4 parejas.
-- Contribui al levantamiento y rediseno de procesos operativos y de desarrollo
+- Contribucion al levantamiento y rediseno de procesos operativos y de desarrollo
   corporativo para asesores Sura a nivel nacional.
 
 TECH AND SOLVE | Diciembre 2017 - Septiembre 2020
 Scrum Master | Agile Coach | Gestor de Proyectos | Consultor
 
-- Gestione proyectos de transformacion y consultoria operativa para clientes de
+- Gestion de proyectos de transformacion y consultoria operativa para clientes de
   los sectores financiero y comercial.
-- Facilite Inception, Discovery, planificacion, seguimiento y mejora continua.
-- Acompane equipos hacia la autogestion y mentoree a otros Scrum Masters.
-- Aplique Scrum, SAFe, practicas PMO y Conscious Business segun el contexto.
+- Facilitacion de Inception, Discovery, planificacion, seguimiento y mejora continua.
+- Desarrollo de autogestion en equipos y mentoria a otros Scrum Masters.
+- Aplicacion de Scrum, SAFe, practicas PMO y Conscious Business segun el contexto.
 
 ONELINK BPO | Febrero 2017 - Julio 2017
 Operaciones de servicio de alto volumen
