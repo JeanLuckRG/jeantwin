@@ -4,6 +4,23 @@
       "maxDuration": 30
     }
   },
+  "redirects": [
+    {
+      "source": "/assets/cv/Jean_Luck_Ruiz_Granda_CV_Project_Manager.pdf",
+      "destination": "/assets/cv/Jean_Luck_Ruiz_Granda_CV_Project_Manager_2026_08.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/assets/cv/Jean_Luck_Ruiz_Granda_CV_Project_Manager_2026.pdf",
+      "destination": "/assets/cv/Jean_Luck_Ruiz_Granda_CV_Project_Manager_2026_08.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/assets/cv/Jean_Luck_Ruiz_Granda_CV_Enterprise_Transformation.pdf",
+      "destination": "/assets/cv/Jean_Luck_Ruiz_Granda_CV_Enterprise_Transformation_2026_08.pdf",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",

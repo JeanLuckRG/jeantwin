@@ -8,6 +8,45 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
+// Persistent section context: keeps long-form navigation oriented.
+const sectionContext = document.getElementById('section-context');
+const sectionContextName = document.getElementById('section-context-name');
+const sectionContextCount = document.getElementById('section-context-count');
+const readingProgressBar = document.getElementById('reading-progress-bar');
+const navAnchors = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+const trackedSections = [...document.querySelectorAll('section[id]')]
+  .filter(section => section.id !== 'inicio');
+
+const sectionLabel = section => {
+  const heading = section.querySelector('h2');
+  return heading ? heading.textContent.replace(/\s+/g, ' ').trim() : section.id;
+};
+
+const setCurrentSection = section => {
+  const index = trackedSections.indexOf(section);
+  if (index < 0) return;
+  sectionContextName.textContent = sectionLabel(section);
+  sectionContextCount.textContent = `${String(index + 1).padStart(2, '0')} / ${String(trackedSections.length).padStart(2, '0')}`;
+  navAnchors.forEach(anchor => {
+    const isCurrent = anchor.getAttribute('href') === `#${section.id}`;
+    if (isCurrent) anchor.setAttribute('aria-current', 'location');
+    else anchor.removeAttribute('aria-current');
+  });
+};
+
+const updateReadingProgress = () => {
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = maxScroll > 0 ? Math.min(100, Math.max(0, (window.scrollY / maxScroll) * 100)) : 0;
+  readingProgressBar.style.width = `${progress}%`;
+  sectionContext.classList.toggle('visible', window.scrollY > window.innerHeight * 0.55);
+  sectionContext.setAttribute('aria-hidden', window.scrollY > window.innerHeight * 0.55 ? 'false' : 'true');
+  const marker = window.scrollY + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'), 10) + 96;
+  const current = [...trackedSections].reverse().find(section => section.offsetTop <= marker) || trackedSections[0];
+  if (current) setCurrentSection(current);
+};
+window.addEventListener('scroll', updateReadingProgress, { passive: true });
+updateReadingProgress();
+
 // Mobile menu — built from HTML nav links
 const mobileMenu = document.createElement('div');
 mobileMenu.className = 'nav-mobile';
@@ -16,25 +55,34 @@ mobileMenu.setAttribute('aria-modal', 'true');
 mobileMenu.setAttribute('aria-label', 'Menú de navegación');
 mobileMenu.innerHTML = `
   <button class="nav-close" id="nav-close" aria-label="Cerrar menú">✕</button>
-  <a href="#servicios"    onclick="closeMobileMenu()">Servicios</a>
-  <a href="#casos"        onclick="closeMobileMenu()">Casos</a>
-  <a href="#perfil"       onclick="closeMobileMenu()">Perfil</a>
-  <a href="#reclutadores" onclick="closeMobileMenu()">Reclutadores</a>
-  <a href="#jeantwin"     onclick="closeMobileMenu()">Jean Twin</a>
-  <a href="#cv" onclick="closeMobileMenu()" class="mobile-cv">Dos CV profesionales</a>
-  <a href="#contacto"     onclick="closeMobileMenu()" class="mobile-cta">Hablemos</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#casos">Casos</a>
+  <a href="#perfil">Perfil</a>
+  <a href="#reclutadores">Reclutadores</a>
+  <a href="#jeantwin">Jean Twin</a>
+  <a href="#cv" class="mobile-cv">Dos CV profesionales</a>
+  <a href="#contacto" class="mobile-cta">Hablemos</a>
 `;
 document.body.appendChild(mobileMenu);
 
 burger.addEventListener('click', () => {
   mobileMenu.classList.add('open');
   burger.setAttribute('aria-expanded', 'true');
+  document.body.classList.add('menu-open');
+  document.getElementById('nav-close').focus();
 });
 function closeMobileMenu() {
   mobileMenu.classList.remove('open');
   burger.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
 }
 document.getElementById('nav-close').addEventListener('click', closeMobileMenu);
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && mobileMenu.classList.contains('open')) {
+    closeMobileMenu();
+    burger.focus();
+  }
+});
 window.closeMobileMenu = closeMobileMenu;
 
 /* ── SCROLL REVEAL ───────────────────────────────────────────── */
@@ -59,7 +107,18 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     const target = document.querySelector(a.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const navigate = () => {
+        const distance = Math.abs(target.getBoundingClientRect().top);
+        target.scrollIntoView({ behavior: distance > window.innerHeight * 1.75 ? 'auto' : 'smooth', block: 'start' });
+        if (target.matches('section[id]') && target.id !== 'inicio') setCurrentSection(target);
+        history.replaceState(null, '', a.getAttribute('href'));
+      };
+      if (mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+        requestAnimationFrame(navigate);
+      } else {
+        navigate();
+      }
     }
   });
 });

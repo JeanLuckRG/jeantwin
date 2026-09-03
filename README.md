@@ -1,6 +1,6 @@
 # Jean Twin — Sitio profesional de Jean Luck Ruiz Granda
 
-Sitio profesional de **Jean Luck Ruiz Granda — AI Enablement & Transformation Leader**, con asistente IA integrado.  
+Sitio profesional de **Jean Luck Ruiz Granda — Enterprise Transformation & Operating Model Lead**, con asistente IA integrado y una segunda ruta de posicionamiento como **Senior Delivery & Program Governance Manager**.  
 **Frontend:** HTML + CSS + Vanilla JS  
 **Backend:** Vercel Serverless Function → Gemini API  
 **Deploy target:** Vercel (free tier)
@@ -72,7 +72,7 @@ Después de publicar, reemplaza las 4 ocurrencias de `YOUR-DOMAIN.COM` en el `<h
 - `<meta property="og:image">`
 - `<meta name="twitter:image">`
 
-Crea también `og-image.jpg` (1200×630px) — usa Canva o Figma con fondo navy y tu foto.
+La vista previa social usa `assets/jean-luck-editorial-v2.webp` como imagen Open Graph y Twitter.
 
 ---
 
@@ -144,6 +144,15 @@ En Vercel → tu proyecto → **Settings → Domains** → agrega tu dominio.
 
 ## Comportamiento del chat IA
 
+### Fuentes profesionales y de empleabilidad
+
+- `config/PROFESSIONAL-FACTS.md`: fuente de verdad profesional y restricciones factuales.
+- `config/EMPLOYMENT-ROUTE.md`: ruta interna de empleabilidad y subsidio; no se publica ni se integra al prompt.
+- `assets/cv/Jean_Luck_Ruiz_Granda_CV_Enterprise_Transformation_2026_08.pdf`: CV visual one-page para transformación empresarial.
+- `assets/cv/Jean_Luck_Ruiz_Granda_CV_Project_Manager_2026_08.pdf`: CV visual one-page para Delivery & Program Governance.
+- `assets/cv/Jean_Luck_Ruiz_Granda_HV_ATS.docx`: HV ATS editable con trayectoria ampliada.
+- `assets/cv/Jean_Luck_Ruiz_Granda_HV_ATS.pdf`: HV ATS en PDF de una columna.
+
 | Condición | Comportamiento |
 |---|---|
 | `GEMINI_API_KEY` configurada | Respuestas generadas por Gemini 1.5 Flash |
@@ -163,7 +172,7 @@ El system prompt completo del asistente está en `config/assistant.js` — edít
 - [ ] Stat card "10+" actualizado con años reales de experiencia
 - [ ] Sección Formación completada (4 cards con `[corchetes]`)
 - [ ] `assets/cv-jean-luck-ruiz-granda.pdf` subido
-- [ ] `assets/og-image.jpg` creado (1200×630px) y URL actualizada
+- [x] Imagen social configurada con `assets/jean-luck-editorial-v2.webp`
 - [ ] Probar formulario de contacto con email real
 - [ ] Probar chat IA en producción
 - [ ] Verificar en mobile (375px)
@@ -178,7 +187,7 @@ El system prompt completo del asistente está en `config/assistant.js` — edít
 | WhatsApp | +57 300 3646376 |
 | Email | injeanluck@gmail.com |
 | LinkedIn | linkedin.com/in/jean-luck-ruiz-granda-a35088162 |
-| Calendario | calendar.app.google/mNCvbC9qWUPPNVBu5 |
+| Calendario | calendar.app.google/YnkNGXWGjiKrQBS5A |
 
 ---
 
