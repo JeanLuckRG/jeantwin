@@ -10,7 +10,7 @@ linkedin.com/in/jean-luck-ruiz-granda-a35088162 | jeantwin.vercel.app
 
 Lider de transformacion empresarial y modelos operativos con 10+ anos de trayectoria profesional total y 8+ anos en consultoria y tecnologia corporativa. Evoluciono desde Scrum y Agile hacia delivery multiproyecto, diseno de organizaciones, desarrollo de lideres y operacion a escala. Cofundo y opero durante cinco anos la arquitectura del Management CoE de Sofka Technologies.
 
-Contribuyo a escalar el CoE de 9 a mas de 110 profesionales y a soportar mas de 160 iniciativas concurrentes. Durante ese crecimiento contribuyo a elevar los ingresos anuales de USD 1M a USD 3M y el margen de 35% a 45%, manteniendo la desercion anual por debajo de 5%. Combina estrategia Data & AI, modelos de negocio, portafolio de servicios, realizacion de valor, change management, delivery governance y sistemas agenticos.
+Contribuyo a escalar el CoE de 9 a mas de 110 profesionales y a soportar mas de 160 iniciativas concurrentes. Durante ese crecimiento contribuyo a elevar los ingresos anuales de USD 1M a USD 3M y el margen de 35% a 45%, manteniendo la desercion anual por debajo de 5%. Combina estrategia y modelos operativos, portafolio de servicios, realizacion de valor, change management, delivery governance e IA aplicada a operaciones y prototipos propios.
 
 ## EVIDENCIA DE ENCAJE
 
@@ -22,18 +22,18 @@ Contribuyo a escalar el CoE de 9 a mas de 110 profesionales y a soportar mas de 
 
 ## CAPACIDADES CLAVE
 
-- Estrategia y liderazgo de unidades: estrategia Data & AI, modelos de negocio, portafolio de servicios, capacidad y economia.
-- Disrupcion digital y transformacion con IA: rediseno de flujos de valor, casos de uso, GenAI adoption y roadmaps.
+- Estrategia y liderazgo de unidades: modelos de negocio, portafolio de servicios, capacidad, economia y aportes en estrategia Data & AI.
+- Transformacion con IA: rediseno de flujos de valor, identificacion de casos de uso, adopcion aplicada de GenAI y roadmaps.
 - Alto rendimiento y realizacion de valor: business case, OKR, KPI, executive dashboards y ciclos de aprendizaje.
 - Diseno organizacional y change management: operating models, roles, competencias, ADKAR, Kotter y capability building.
 - Producto, programas y portafolio: product discovery, priorizacion, roadmaps, delivery governance y gestion de dependencias.
-- AI operating model y gobierno: demanda, Responsible AI, guardrails, adopcion, riesgos y supervision humana.
+- Adopcion y gobierno aplicado de IA: priorizacion de demanda, criterios de valor y riesgo, guardrails y supervision humana.
 - Ofertas y preventa consultiva: discovery, propuesta de valor, alcance, estimaciones, RFP y modelos de capacidad.
-- Sistemas agenticos y capacidad transferible: prompt y context engineering, source grounding, workflow states y quality gates.
+- Prototipado de sistemas asistidos por IA: prompt y context engineering, source grounding, workflow states y quality gates aplicados a prototipos propios.
 
 ## HERRAMIENTAS Y MARCOS
 
-Azure DevOps avanzado | Power BI | CRM | Microsoft 365 | Google Workspace | Miro | PMI / PMBOK aplicado | Scrum | SAFe | Nexus | LeSS | ADKAR | Kotter | OKR | KPI | Responsible AI
+Azure DevOps avanzado | Power BI | CRM | Microsoft 365 | Google Workspace | Miro | PMI / PMBOK aplicado | Scrum | SAFe | Nexus | LeSS | ADKAR | Kotter | OKR | KPI | IA aplicada
 
 ## FORMACION
 
@@ -52,17 +52,15 @@ Fundamentos de Diseno - SENA, 40 horas, 2015 | Herramientas de Prototipado Elect
 
 Espanol nativo | Ingles B2 - Marco Comun Europeo de Referencia.
 
-[PAGE BREAK]
-
 ## EXPERIENCIA PROFESIONAL
 
 ### METODOLOGIA | Mayo 2026 - Actualidad
 
-Embajador de la marca | AI Enablement & Systems Builder
+Embajador de la marca | Desarrollo de capacidades con IA
 
-- Construye productos de aprendizaje y consultoria habilitados por IA como Embajador de MetodologIA.
-- Completo un programa intensivo de 16 semanas y construyo 16 entregables entre metodologias, activos digitales, sistemas y evidencias de aprendizaje aplicado.
-- Desarrolla posicionamiento, modelo de negocio y mecanismos de sostenibilidad; aplica prompt y context engineering, source grounding, workflow states y quality gates.
+- Completo un ciclo intensivo de 16 semanas y materializo 16 entregables entre metodologias, activos digitales, sistemas y evidencias de aprendizaje aplicado.
+- Convirtio ese aprendizaje en evidencia publica: construyo y desplego JeanTwin, un agente profesional propio con base de conocimiento, criterios de voz y funcion serverless.
+- Como Embajador, conecta personas y organizaciones con el portafolio publicado en metodologia.info y con una ruta de cuatro workshops que lleva una idea a un producto digital funcional.
 
 ### SOFKA TECHNOLOGIES | Septiembre 2020 - Abril 2026
 
@@ -106,3 +104,15 @@ Mantenimiento de Planta
 Soporte de Aplicaciones CAD
 
 - Brindo soporte tecnico, diagnostico y resolucion de incidentes de aplicaciones CAD.
+
+## REFERENCIAS
+
+### Javier Andrés Montaño Guzmán | Referencia laboral
+
+Center of Excellence Head, Amaris Consulting. Jefe directo en Sofka Technologies.
+
+### Andrés Felipe Patiño Agudelo | Referencia personal
+
+Gerente de Sostenibilidad, Juan Valdez. Socios en emprendimientos.
+
+Datos de contacto disponibles a solicitud.

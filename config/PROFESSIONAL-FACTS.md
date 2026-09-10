@@ -55,14 +55,14 @@ Limite factual: Jean gestiono costos y rentabilidad del Management CoE para aseg
 
 ## Hard skills
 
-- Estrategia y liderazgo de unidades: estrategia Data & AI, modelos de negocio, portafolio de servicios, capacidad y economia.
-- Disrupcion digital y transformacion con IA: rediseno de flujos de valor, casos de uso, GenAI adoption y roadmaps.
+- Estrategia y liderazgo de unidades: modelos de negocio, portafolio de servicios, capacidad, economia y aportes en estrategia Data & AI.
+- Transformacion con IA: rediseno de flujos de valor, identificacion de casos de uso, adopcion aplicada de GenAI y roadmaps.
 - Alto rendimiento y realizacion de valor: business case, OKR, KPI, executive dashboards y ciclos de aprendizaje.
 - Diseno organizacional y change management: operating models, roles, competencias, ADKAR, Kotter y capability building.
 - Producto, programas y portafolio: product discovery, priorizacion, roadmaps, delivery governance y gestion de dependencias.
-- AI operating model y gobierno: demanda, Responsible AI, guardrails, adopcion, riesgos y supervision humana.
+- Adopcion y gobierno aplicado de IA: priorizacion de demanda, criterios de valor y riesgo, guardrails y supervision humana.
 - Ofertas y preventa consultiva: discovery, propuesta de valor, alcance, estimaciones, RFP y modelos de capacidad.
-- Sistemas agenticos y capacidad transferible: prompt y context engineering, source grounding, workflow states y quality gates.
+- Prototipado de sistemas asistidos por IA: prompt y context engineering, source grounding, workflow states y quality gates aplicados a prototipos propios.
 - Azure DevOps avanzado; Power BI, CRM, Microsoft 365, Google Workspace y Miro aplicados.
 
 ## Soft skills
@@ -95,6 +95,8 @@ Limite factual: Jean gestiono costos y rentabilidad del Management CoE para aseg
 - Funcion comercial de Jean como Embajador: orientar a personas y organizaciones hacia la oferta de MetodologIA que corresponda a su necesidad y facilitar una ruta directa para explorar o adquirir servicios. No atribuirle propiedad, autoria total del catalogo ni representacion legal.
 - Proposito: transformar conocimiento en capacidades, herramientas y experiencias de aprendizaje apoyadas por IA.
 - Evidencia: ciclo intensivo de 16 entregables completados; contenidos, metodologias, evidencias, activos digitales y sistemas aplicados a desarrollo profesional y transformacion organizacional.
+- Evidencia publica actual: JeanTwin desplegado en produccion, portafolio oficial activo y ruta publicada de cuatro workshops. Esto demuestra capacidad creada y disponibilidad comercial, no validacion de mercado.
+- Limite factual: no hay datos confirmados de clientes, ventas, inscritos, asistencia, conversion, uso o ingresos de MetodologIA. No afirmar traccion ni validacion de mercado hasta que Jean aporte esas metricas.
 - Valor generado: produccion documentada, validacion de aprendizajes, recursos y experiencias que crean valor social, junto con una oferta empresarial orientada a diagnosticar, formar y construir capacidades con IA.
 - Funcion narrativa: demuestra continuidad y generacion de valor durante el periodo posterior a Sofka; no presentarlo como vacio laboral.
 
@@ -125,6 +127,7 @@ Visibilidad: interna. No publicar cifras ni usarlas como respuesta automatica a 
 - **Sura - liderazgo consciente:** proceso para 16 lideres, organizado en ocho duplas y fundamentado en Fred Kofman. Hubo asistencia completa y graduacion del 100%; las ocho duplas demostraron competencias mediante sistemas de implantacion de habitos y pruebas conversacionales en tiempo real. Jean participo en diagnostico, diseno, facilitacion, implementacion y validacion; facilito cuatro duplas. Los lideres quedaron habilitados como replicadores hacia decenas de equipos Sura.
 - **Sura - asesores:** contribucion al rediseno nacional del proceso de desarrollo empresarial de asesores, conectando retroalimentacion sobre competencias habilitadas con su proceso de desarrollo profesional. Las metricas de mejora son confidenciales del cliente.
 - **IA aplicada al CoE:** incorporacion de IA al Listado Maestro y a la consolidacion de informacion operativa para reducir carga manual y ampliar capacidad de seguimiento. No afirmar automatizacion total.
+- **Sistemas propios con IA:** JeanTwin es un agente profesional publico en produccion; WendyTwin, Argos y Ankhra / SO Union son prototipos propios recientes. Demuestran construccion aplicada y aprendizaje transferible, no despliegues enterprise ni resultados comerciales probados.
 - **Transformacion continua:** sostenimiento y evolucion anual del Management CoE durante cinco anos de reorganizaciones corporativas recurrentes.
 - **Proteccion - Historia Laboral y doble asesoria:** gestion de una solucion de impacto nacional sobre historia laboral y pensiones con un equipo de alta eficiencia de 8 ingenieros de TI en frontend, backend, calidad y despliegue.
 - **TI para retail:** discovery y planificacion de multiples iniciativas de innovacion y desarrollo para el area de TI de un cliente del sector retail.
