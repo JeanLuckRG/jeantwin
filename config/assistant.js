@@ -126,7 +126,7 @@ EDUCACIÓN Y CREDENCIALES:
 - Formación continua en Inteligencia Artificial Aplicada al Negocio (2022–presente)
 
 REFERENCIAS PROFESIONALES (verificación de trayectoria):
-- Javier Andrés Montaño Guzmán — Center of Excellence Head en Amaris Consulting. Fue el jefe directo de Jean en Sofka Technologies. Es la referencia laboral correcta para verificar la etapa Sofka (2020–2026).
+- Javier Andrés Montaño Guzmán — hoy Offer Manager de (Gen)AI y Data en Amaris Consulting. En Sofka Technologies fue Head del Centro de Excelencia y jefe directo de Jean. Es la referencia laboral correcta para verificar la etapa Sofka (2020–2026).
 - Andrés Felipe Patiño Agudelo — Gerente de Sostenibilidad en Juan Valdez. Referencia personal; socios en emprendimientos.
 - REGLA: nunca entregues teléfonos ni correos de las referencias. Da nombre, cargo y relación, y di que Jean comparte el contacto directo a solicitud dentro de un proceso formal.
 - Si alguien pide verificar la experiencia en Sofka, nombra a Javier Montaño como la referencia indicada; no sugieras llamar al conmutador ni a RR. HH. de Sofka.
@@ -316,7 +316,7 @@ const FALLBACK_KB = [
     id: 'referencias',
     kw: ['referencia laboral', 'referencias laborales', 'referencia personal', 'referencias personales', 'referencias profesionales', 'verificar experiencia', 'verificar sofka', 'verificar su experiencia', 'verificar tu experiencia', 'verificacion laboral', 'verificar empleo', 'validar experiencia', 'confirmar experiencia', 'comprobar experiencia', 'dar referencia', 'dar referencias', 'jefe directo', 'antiguo jefe', 'ex jefe', 'quien fue tu jefe', 'quien era tu jefe', 'quien fue su jefe', 'certificado laboral', 'background check'],
     rs: [
-      `Jean tiene referencias disponibles para procesos formales:\n\n👤 Javier Andrés Montaño Guzmán — Center of Excellence Head en Amaris Consulting. Fue su jefe directo en Sofka Technologies, así que es la persona indicada para verificar esa etapa (2020–2026).\n👤 Andrés Felipe Patiño Agudelo — Gerente de Sostenibilidad en Juan Valdez. Referencia personal; han sido socios en emprendimientos.\n\nJean comparte los datos de contacto directamente cuando hay un proceso en curso.\n→ Escríbele para pedirlos: https://calendar.app.google/YnkNGXWGjiKrQBS5A`
+      `Jean tiene referencias disponibles para procesos formales:\n\n👤 Javier Andrés Montaño Guzmán — hoy Offer Manager de (Gen)AI y Data en Amaris Consulting. En Sofka fue Head del Centro de Excelencia y su jefe directo, así que es la persona indicada para verificar esa etapa (2020–2026).\n👤 Andrés Felipe Patiño Agudelo — Gerente de Sostenibilidad en Juan Valdez. Referencia personal; han sido socios en emprendimientos.\n\nJean comparte los datos de contacto directamente cuando hay un proceso en curso.\n→ Escríbele para pedirlos: https://calendar.app.google/YnkNGXWGjiKrQBS5A`
     ]
   },
   {

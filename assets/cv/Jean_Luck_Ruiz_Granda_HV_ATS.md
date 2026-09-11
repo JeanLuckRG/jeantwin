@@ -109,7 +109,7 @@ Soporte de Aplicaciones CAD
 
 ### Javier Andrés Montaño Guzmán | Referencia laboral
 
-Center of Excellence Head, Amaris Consulting. Jefe directo en Sofka Technologies.
+Offer Manager de (Gen)AI y Data, Amaris Consulting. Fue Head del Centro de Excelencia y jefe directo de Jean en Sofka Technologies.
 
 ### Andrés Felipe Patiño Agudelo | Referencia personal
 
